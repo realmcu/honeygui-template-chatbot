@@ -1,34 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hml>
     <meta>
-        <project name="ChatBotTemplate" appId="com.honeygui.chatbot" resolution="480X320" minSdk="API 2: HoneyGUI V1.1.0" pixelMode="ARGB8888" />
+        <project name="WelcomeScreen" appId="com.honeygui.chatbot" resolution="480X320" minSdk="API 2: HoneyGUI V1.1.0" pixelMode="ARGB8888" />
         <author name="HoneyGUI Design" />
     </meta>
     <view>
-        <hg_view id="mainView" entry="true" x="0" y="0" width="480" height="320" name="mainView" backgroundColor="#F5F5F5">
-            <!-- Header Title -->
-            <hg_text id="headerTitle" x="20" y="12" width="440" height="26" name="headerTitle"
-                     text="AI Assistant" fontSize="20" color="#4A90E2" />
-            
-            <!-- Bot Message 1 -->
-            <hg_text id="botText1" x="20" y="60" width="330" height="40" name="botText1"
-                     text="Hello! How can I help you today?" fontSize="14" color="#333333" />
-            
-            <!-- User Message 1 -->
-            <hg_text id="userText1" x="130" y="110" width="330" height="40" name="userText1"
-                     text="What's the weather like?" fontSize="14" color="#4A90E2" />
-            
-            <!-- Bot Message 2 -->
-            <hg_text id="botText2" x="20" y="160" width="330" height="30" name="botText2"
-                     text="It's sunny, 22°C" fontSize="14" color="#333333" />
-            
-            <!-- Input placeholder -->
-            <hg_text id="inputPlaceholder" x="20" y="280" width="360" height="30" name="inputPlaceholder"
-                     text="Type a message..." fontSize="14" color="#888888" />
-            
-            <!-- Send button (text) -->
-            <hg_text id="sendBtn" x="400" y="280" width="70" height="30" name="sendBtn"
-                     text="Send" fontSize="14" color="#4A90E2" />
+        <hg_view id="ChatBotTemplateMainView" x="0" y="0" width="480" height="320" backgroundColor="#1A1A2E" entry="true">
+            <events>
+                <event type="onClick">
+                    <action type="switchView" target="ChatBotChatView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
+                </event>
+            </events>
+            <hg_3d id="hg_3d_1768808847866_9ieu" x="140" y="50" width="200" height="200" modelPath="assets/robot/robot.gltf" worldX="0" worldY="5" worldZ="8" rotationX="0" rotationY="0" rotationZ="0" scale="5" cameraPosX="0" cameraPosY="0" cameraPosZ="0" cameraLookX="0" cameraLookY="0" cameraLookZ="1" autoRotationEnabled="true" autoRotationSpeed="0.5" zIndex="1" />
+            <hg_label id="hg_label_1768808891445_atnm" x="161" y="258" width="158" height="24" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="AI Assistant" fontFile="/font/sf_compact_text_medium.otf" fontSize="24" zIndex="1" />
+            <hg_label id="hg_label_1768808891445_atnm_copy_1768809019644" x="161" y="284" width="158" height="24" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Tap to start" fontFile="/font/sf_compact_text_light.otf" fontSize="14" zIndex="1" />
         </hg_view>
     </view>
 </hml>

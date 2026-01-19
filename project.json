@@ -9,5 +9,9 @@
   "pixelMode": "ARGB8888",
   "mainHmlFile": "ui/ChatBotMain.hml",
   "template": "chatbot",
-  "created": "2025-12-11"
+  "created": "2025-12-11",
+  "assetsDir": "assets",
+  "uiDir": "ui",
+  "srcDir": "src",
+  "romfsBaseAddr": "0x704D1000"
 }
