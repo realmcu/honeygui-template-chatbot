@@ -10,10 +10,14 @@
                 <event type="onClick">
                     <action type="switchView" target="ChatBotChatView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
                 </event>
+                <event type="onSwipeLeft">
+                    <action type="switchView" target="ChatBotFeaturesView" switchOutStyle="SWITCH_OUT_TO_LEFT_USE_TRANSLATION" switchInStyle="SWITCH_IN_FROM_RIGHT_USE_TRANSLATION" />
+                </event>
             </events>
-            <hg_3d id="hg_3d_1768808847866_9ieu" x="140" y="50" width="200" height="200" modelPath="assets/robot/robot.gltf" worldX="0" worldY="5" worldZ="8" rotationX="0" rotationY="0" rotationZ="0" scale="5" cameraPosX="0" cameraPosY="0" cameraPosZ="0" cameraLookX="0" cameraLookY="0" cameraLookZ="1" autoRotationEnabled="true" autoRotationSpeed="0.5" zIndex="1" />
-            <hg_label id="hg_label_1768808891445_atnm" x="161" y="258" width="158" height="24" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="AI Assistant" fontFile="/font/sf_compact_text_medium.otf" fontSize="24" zIndex="1" />
-            <hg_label id="hg_label_1768808891445_atnm_copy_1768809019644" x="161" y="284" width="158" height="24" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Tap to start" fontFile="/font/sf_compact_text_light.otf" fontSize="14" zIndex="1" />
+            <hg_3d id="hg_3d_1768808847866_9ieu" x="140" y="53" width="200" height="200" modelPath="assets/robot/robot.gltf" worldX="0" worldY="5" worldZ="8" rotationX="0" rotationY="0" rotationZ="0" scale="5" cameraPosX="0" cameraPosY="0" cameraPosZ="0" cameraLookX="0" cameraLookY="0" cameraLookZ="1" autoRotationEnabled="true" autoRotationSpeed="0.5" zIndex="1" />
+            <hg_label id="hg_label_1768808891445_atnm" x="161" y="262" width="158" height="24" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="AI Assistant" fontFile="/font/sf_compact_text_medium.otf" fontSize="24" zIndex="1" />
+            <hg_label id="hg_label_1768808891445_atnm_copy_1768809019644" x="161" y="293" width="158" height="24" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Tap to start" fontFile="/font/sf_compact_text_light.otf" fontSize="14" zIndex="1" />
+            <hg_time_label id="hg_time_label_1768899954674_gizw" x="180" y="13" width="120" height="30" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" timeFormat="HH:mm" characterSets="[{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;0123456789:- &quot;}]" fontFile="/font/sf_compact_text_medium.otf" fontSize="30" zIndex="1" />
         </hg_view>
     </view>
 </hml>

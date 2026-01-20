@@ -7,7 +7,7 @@
     <view>
         <hg_view id="ChatBotChatView" x="0" y="0" width="480" height="320" backgroundColor="#F5F7FA" entry="true">
             <hg_rect id="headerBg" x="0" y="0" width="480" height="50" fillColor="#4A90E2" borderRadius="0" />
-            <hg_label id="headerTitle" x="50" y="12" width="380" height="26" color="#FFFFFF" hAlign="LEFT" vAlign="MID" text="AI Assistant" fontSize="20" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" />
+            <hg_label id="headerTitle" x="50" y="12" width="380" height="26" color="#FFFFFF" hAlign="CENTER" vAlign="MID" text="AI Assistant" fontSize="20" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" />
             <hg_rect id="chatAreaBg" x="0" y="50" width="480" height="220" fillColor="#F5F7FA" borderRadius="0" />
             <hg_rect id="botBubble1Bg" x="15" y="65" width="300" height="50" fillColor="#E8EEF5" borderRadius="12" />
             <hg_label id="botText1" x="65" y="70" width="240" height="40" color="#2C3E50" wordWrap="true" vAlign="MID" text="Hello! How can I help you today?" fontSize="16" fontFile="/font/sf_compact_text_light.otf" fontType="bitmap" />
@@ -16,20 +16,30 @@
             <hg_rect id="botBubble2Bg" x="15" y="195" width="260" height="50" fillColor="#E8EEF5" borderRadius="12" />
             <hg_label id="botText2" x="65" y="210" width="200" height="20" color="#2C3E50" vAlign="MID" text="It&#39;s sunny and 22°C." fontSize="16" fontFile="/font/sf_compact_text_light.otf" fontType="bitmap" />
             <hg_rect id="inputBarBg" x="0" y="270" width="480" height="50" fillColor="#FFFFFF" borderRadius="0" />
-            <hg_rect id="inputBoxBg" x="15" y="280" width="380" height="30" fillColor="#F0F0F0" borderRadius="15" />
-            <hg_label id="inputPlaceholder" x="30" y="287" width="350" height="16" color="#999999" vAlign="MID" text="Type a message..." fontSize="14" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" />
+            <hg_rect id="voiceMicIcon" x="23" y="286" width="6" height="10" fillColor="#FFFFFF" borderRadius="3" />
+            <hg_rect id="voiceMicStand" x="25" y="296" width="2" height="4" fillColor="#FFFFFF" borderRadius="0" />
+            <hg_rect id="voiceMicBase" x="23" y="300" width="6" height="2" fillColor="#FFFFFF" borderRadius="1" />
+            <hg_rect id="inputBoxBg" x="55" y="280" width="340" height="30" fillColor="#F0F0F0" borderRadius="15" />
+            <hg_label id="inputPlaceholder" x="70" y="287" width="310" height="16" color="#999999" vAlign="MID" text="Type a message..." fontSize="14" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" />
             <hg_rect id="sendBtnBg" x="405" y="280" width="60" height="30" fillColor="#4A90E2" borderRadius="15" />
             <hg_label id="sendBtnText" x="420" y="287" width="30" height="16" color="#FFFFFF" hAlign="CENTER" vAlign="MID" text="Send" fontSize="14" fontFile="/font/sf_compact_text_semibold.otf" fontType="bitmap" />
-            <hg_image id="hg_image_1768802131071_oqce" x="15" y="15" width="11" height="20" src="assets/return.png" zIndex="1">
+            <hg_image id="hg_image_1768902084122_gugh" x="11" y="278" width="35" height="35" src="assets/chat/mic.png" zIndex="1">
+                <events>
+                    <event type="onClick">
+                        <action type="switchView" target="ChatBotVoiceInputView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
+                    </event>
+                </events>
+            </hg_image>
+            <hg_image id="hg_image_1768902472844_8i52" x="17" y="15" width="11" height="20" src="assets/chat/return.png" zIndex="1">
                 <events>
                     <event type="onClick">
                         <action type="switchView" target="ChatBotTemplateMainView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
                     </event>
                 </events>
             </hg_image>
-            <hg_image id="hg_image_1768807911401_4k8d" x="424" y="145" width="30" height="30" src="assets/user.png" zIndex="1" />
-            <hg_image id="hg_image_1768807952241_hz4o" x="26" y="74" width="32" height="32" src="assets/general_robot.png" zIndex="1" />
-            <hg_image id="hg_image_1768807966258_rgo9" x="26" y="203" width="32" height="32" src="assets/general_robot.png" zIndex="1" />
+            <hg_image id="hg_image_1768902485540_kaad" x="26" y="74" width="32" height="32" src="assets/chat/general_robot.png" zIndex="1" />
+            <hg_image id="hg_image_1768902502036_7zrb" x="424" y="145" width="30" height="30" src="assets/chat/user.png" zIndex="1" />
+            <hg_image id="hg_image_1768902511432_v9ml" x="26" y="203" width="32" height="32" src="assets/chat/general_robot.png" zIndex="1" />
         </hg_view>
     </view>
 </hml>
