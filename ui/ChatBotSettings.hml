@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hml>
+    <meta>
+        <project name="ChatBotSettings" appId="com.honeygui.chatbot" resolution="480X320" minSdk="API 2: HoneyGUI V1.1.0" pixelMode="ARGB8888" />
+        <author name="HoneyGUI Design" />
+    </meta>
+    <view>
+        <hg_view id="ChatBotSettingsView" x="0" y="0" width="480" height="320" backgroundColor="#000000" entry="true" zIndex="0">
+            <events>
+                <event type="onSwipeRight">
+                    <action type="switchView" target="ChatBotFeaturesView" switchOutStyle="SWITCH_OUT_TO_RIGHT_USE_TRANSLATION" switchInStyle="SWITCH_IN_FROM_LEFT_USE_TRANSLATION" />
+                </event>
+            </events>
+            <hg_image id="hg_image_1768984325959_3kts" x="0" y="50" width="480" height="270" src="assets/chatbot_bg.png" zIndex="0" />
+            <hg_list id="settingsList" x="0" y="0" width="480" height="270" itemWidth="480" itemHeight="50" space="0" direction="VERTICAL" style="LIST_CLASSIC" cardStackLocation="0" noteNum="9" offset="0" outScope="0" autoAlign="true" inertia="true" loop="false" createBar="false" showOverflow="true" zIndex="1" showOverflow="true">
+                <hg_list_item id="settingsList_item_0" x="0" y="0" width="480" height="50" index="0" locked="true" zIndex="0" />
+                <hg_list_item id="settingsList_item_1" x="0" y="50" width="480" height="50" index="1" locked="true" zIndex="1">
+                    <hg_rect id="languageItemBg" x="20" y="7" width="440" height="50" fillColor="#FFFFFF" borderRadius="8" zIndex="0">
+                        <events>
+                            <event type="onClick">
+                                <action type="callback" />
+                            </event>
+                        </events>
+                    </hg_rect>
+                    <hg_label id="languageLabel" x="35" y="18" width="200" height="30" color="#2C3E50" hAlign="LEFT" vAlign="MID" text="Language" fontSize="16" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="1" />
+                    <hg_label id="languageValue" x="250" y="17" width="180" height="30" color="#7F8C8D" hAlign="RIGHT" vAlign="MID" text="English" fontSize="14" fontFile="/font/sf_compact_text_light.otf" fontType="bitmap" zIndex="2" />
+                    <hg_label id="languageArrow" x="440" y="22" width="10" height="20" color="#BDC3C7" hAlign="CENTER" vAlign="MID" text="&gt;" fontSize="18" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" characterSets="[{&quot;type&quot;:&quot;range&quot;,&quot;value&quot;:&quot;0x20-0x7e&quot;}]" zIndex="3" />
+                </hg_list_item>
+                <hg_list_item id="settingsList_item_2" x="0" y="100" width="480" height="50" index="2" locked="true" zIndex="2">
+                    <hg_rect id="themeItemBg" x="20" y="7" width="440" height="50" fillColor="#FFFFFF" borderRadius="8" zIndex="0">
+                        <events>
+                            <event type="onClick">
+                                <action type="callback" />
+                            </event>
+                        </events>
+                    </hg_rect>
+                    <hg_label id="themeLabel" x="35" y="18" width="200" height="30" color="#2C3E50" hAlign="LEFT" vAlign="MID" text="Theme" fontSize="16" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="1" />
+                    <hg_label id="themeValue" x="250" y="17" width="180" height="30" color="#7F8C8D" hAlign="RIGHT" vAlign="MID" text="Light" fontSize="14" fontFile="/font/sf_compact_text_light.otf" fontType="bitmap" zIndex="2" />
+                    <hg_label id="themeArrow" x="440" y="22" width="10" height="20" color="#BDC3C7" hAlign="CENTER" vAlign="MID" text="&gt;" fontSize="18" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="3" />
+                </hg_list_item>
+                <hg_list_item id="settingsList_item_3" x="0" y="150" width="480" height="50" index="3" locked="true" zIndex="3">
+                    <hg_rect id="notificationItemBg" x="20" y="7" width="440" height="50" fillColor="#FFFFFF" borderRadius="8" zIndex="0">
+                        <events>
+                            <event type="onClick">
+                                <action type="callback" />
+                            </event>
+                        </events>
+                    </hg_rect>
+                    <hg_label id="notificationLabel" x="35" y="18" width="300" height="30" color="#2C3E50" hAlign="LEFT" vAlign="MID" text="Notifications" fontSize="16" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="1" />
+                    <hg_button id="hg_button_1768980240729_1t5d" x="406" y="25" width="28" height="16" toggleMode="true" initialState="on" imageOn="assets/setting/switch_on.png" imageOff="assets/setting/switch_off.png" zIndex="2" />
+                </hg_list_item>
+                <hg_list_item id="settingsList_item_4" x="0" y="200" width="480" height="50" index="4" locked="true" zIndex="4">
+                    <hg_rect id="voiceItemBg" x="20" y="7" width="440" height="50" fillColor="#FFFFFF" borderRadius="8" zIndex="0">
+                        <events>
+                            <event type="onClick">
+                                <action type="callback" />
+                            </event>
+                        </events>
+                    </hg_rect>
+                    <hg_label id="voiceLabel" x="35" y="18" width="200" height="30" color="#2C3E50" hAlign="LEFT" vAlign="MID" text="Voice Speed" fontSize="16" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="1" />
+                    <hg_label id="voiceValue" x="250" y="17" width="180" height="30" color="#7F8C8D" hAlign="RIGHT" vAlign="MID" text="Normal" fontSize="14" fontFile="/font/sf_compact_text_light.otf" fontType="bitmap" zIndex="2" />
+                    <hg_label id="voiceArrow" x="440" y="22" width="10" height="20" color="#BDC3C7" hAlign="CENTER" vAlign="MID" text="&gt;" fontSize="18" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="3" />
+                </hg_list_item>
+                <hg_list_item id="settingsList_item_5" x="0" y="250" width="480" height="50" index="5" locked="true" zIndex="5">
+                    <hg_rect id="fontSizeItemBg" x="20" y="7" width="440" height="50" fillColor="#FFFFFF" borderRadius="8" zIndex="0">
+                        <events>
+                            <event type="onClick">
+                                <action type="callback" />
+                            </event>
+                        </events>
+                    </hg_rect>
+                    <hg_label id="fontSizeLabel" x="35" y="18" width="200" height="30" color="#2C3E50" hAlign="LEFT" vAlign="MID" text="Font Size" fontSize="16" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="1" />
+                    <hg_label id="fontSizeValue" x="250" y="17" width="180" height="30" color="#7F8C8D" hAlign="RIGHT" vAlign="MID" text="Medium" fontSize="14" fontFile="/font/sf_compact_text_light.otf" fontType="bitmap" zIndex="2" />
+                    <hg_label id="fontSizeArrow" x="440" y="22" width="10" height="20" color="#BDC3C7" hAlign="CENTER" vAlign="MID" text="&gt;" fontSize="18" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="3" />
+                </hg_list_item>
+                <hg_list_item id="settingsList_item_6" x="0" y="300" width="480" height="50" index="6" locked="true" zIndex="6">
+                    <hg_rect id="autoReplyItemBg" x="20" y="7" width="440" height="50" fillColor="#FFFFFF" borderRadius="8" zIndex="0">
+                        <events>
+                            <event type="onClick">
+                                <action type="callback" />
+                            </event>
+                        </events>
+                    </hg_rect>
+                    <hg_label id="autoReplyLabel" x="35" y="18" width="300" height="30" color="#2C3E50" hAlign="LEFT" vAlign="MID" text="Auto Reply" fontSize="16" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="1" />
+                    <hg_button id="hg_button_1768980240729_1t5d_copy_1768983305294" x="406" y="25" width="28" height="16" toggleMode="true" initialState="off" imageOn="assets/setting/switch_on.png" imageOff="assets/setting/switch_off.png" zIndex="2" />
+                </hg_list_item>
+                <hg_list_item id="settingsList_item_7" x="0" y="350" width="480" height="50" index="7" locked="true" zIndex="7">
+                    <hg_rect id="historyItemBg" x="20" y="7" width="440" height="50" fillColor="#FFFFFF" borderRadius="8" zIndex="0">
+                        <events>
+                            <event type="onClick">
+                                <action type="callback" />
+                            </event>
+                        </events>
+                    </hg_rect>
+                    <hg_label id="historyLabel" x="35" y="18" width="200" height="30" color="#2C3E50" hAlign="LEFT" vAlign="MID" text="Keep History" fontSize="16" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="1" />
+                    <hg_label id="historyValue" x="250" y="17" width="180" height="30" color="#7F8C8D" hAlign="RIGHT" vAlign="MID" text="7 Days" fontSize="14" fontFile="/font/sf_compact_text_light.otf" fontType="bitmap" zIndex="2" />
+                    <hg_label id="historyArrow" x="440" y="22" width="10" height="20" color="#BDC3C7" hAlign="CENTER" vAlign="MID" text="&gt;" fontSize="18" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="3" />
+                </hg_list_item>
+                <hg_list_item id="settingsList_item_8" x="0" y="400" width="480" height="50" index="8" zIndex="8">
+                    <hg_rect id="aboutItemBg" x="20" y="7" width="440" height="50" fillColor="#FFFFFF" borderRadius="8" zIndex="0">
+                        <events>
+                            <event type="onClick">
+                                <action type="callback" />
+                            </event>
+                        </events>
+                    </hg_rect>
+                    <hg_label id="aboutLabel" x="35" y="18" width="200" height="30" color="#2C3E50" hAlign="LEFT" vAlign="MID" text="About" fontSize="16" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="1" />
+                    <hg_label id="aboutValue" x="250" y="17" width="180" height="30" color="#7F8C8D" hAlign="RIGHT" vAlign="MID" text="Version 1.0.0" fontSize="14" fontFile="/font/sf_compact_text_light.otf" fontType="bitmap" zIndex="2" />
+                    <hg_label id="aboutArrow" x="440" y="22" width="10" height="20" color="#BDC3C7" hAlign="CENTER" vAlign="MID" text="&gt;" fontSize="18" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="3" />
+                </hg_list_item>
+            </hg_list>
+            <hg_rect id="headerBg_setting" x="0" y="0" width="480" height="50" fillColor="#4A90E2" borderRadius="0" zIndex="2" />
+            <hg_label id="headerTitle_setting" x="50" y="12" width="380" height="26" color="#FFFFFF" hAlign="CENTER" vAlign="MID" text="Settings" fontSize="20" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="3" />
+        </hg_view>
+    </view>
+</hml>
