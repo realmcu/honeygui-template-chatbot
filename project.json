@@ -1,4 +1,6 @@
 {
+  "$schema": "HoneyGUI",
+  "type": "Designer",
   "name": "ChatBotTemplate",
   "appId": "com.honeygui.chatbot",
   "version": "1.0.0",
