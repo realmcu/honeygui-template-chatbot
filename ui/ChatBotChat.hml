@@ -6,40 +6,85 @@
     </meta>
     <view>
         <hg_view id="ChatBotChatView" x="0" y="0" width="480" height="320" backgroundColor="#000000" entry="true" zIndex="0">
-            <hg_rect id="headerBg" x="0" y="0" width="480" height="50" fillColor="#4A90E2" borderRadius="0" zIndex="0" />
-            <hg_label id="headerTitle" x="50" y="12" width="380" height="26" color="#FFFFFF" hAlign="CENTER" vAlign="MID" text="AI Assistant" fontSize="20" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="1" />
-            <hg_rect id="chatAreaBg" x="0" y="50" width="480" height="220" fillColor="#F5F7FA" borderRadius="0" zIndex="2" />
-            <hg_rect id="botBubble1Bg" x="15" y="65" width="300" height="50" fillColor="#E8EEF5" borderRadius="12" zIndex="3" />
-            <hg_label id="botText1" x="65" y="70" width="240" height="40" color="#2C3E50" wordWrap="true" vAlign="MID" text="Hello! How can I help you today?" fontSize="16" fontFile="/font/sf_compact_text_light.otf" fontType="bitmap" zIndex="4" />
-            <hg_rect id="userBubble1Bg" x="165" y="135" width="300" height="50" fillColor="#4A90E2" borderRadius="12" zIndex="5" />
-            <hg_label id="userText1" x="180" y="145" width="240" height="30" color="#FFFFFF" wordWrap="true" vAlign="MID" text="What&#39;s the weather like?" fontSize="16" fontFile="/font/sf_compact_text_light.otf" fontType="bitmap" zIndex="6" />
-            <hg_rect id="botBubble2Bg" x="15" y="195" width="260" height="50" fillColor="#E8EEF5" borderRadius="12" zIndex="7" />
-            <hg_label id="botText2" x="65" y="210" width="200" height="20" color="#2C3E50" vAlign="MID" text="It&#39;s sunny and 22°C." fontSize="16" fontFile="/font/sf_compact_text_light.otf" fontType="bitmap" zIndex="8" />
-            <hg_rect id="inputBarBg" x="0" y="270" width="480" height="50" fillColor="#FFFFFF" borderRadius="0" zIndex="9" />
-            <hg_rect id="voiceMicIcon" x="23" y="286" width="6" height="10" fillColor="#FFFFFF" borderRadius="3" zIndex="10" />
-            <hg_rect id="voiceMicStand" x="25" y="296" width="2" height="4" fillColor="#FFFFFF" borderRadius="0" zIndex="11" />
-            <hg_rect id="voiceMicBase" x="23" y="300" width="6" height="2" fillColor="#FFFFFF" borderRadius="1" zIndex="12" />
-            <hg_rect id="inputBoxBg" x="55" y="280" width="340" height="30" fillColor="#F0F0F0" borderRadius="15" zIndex="13" />
-            <hg_label id="inputPlaceholder" x="70" y="287" width="310" height="16" color="#999999" vAlign="MID" text="Type a message..." fontSize="14" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="14" />
-            <hg_rect id="sendBtnBg" x="405" y="280" width="60" height="30" fillColor="#4A90E2" borderRadius="15" zIndex="15" />
-            <hg_label id="sendBtnText" x="420" y="287" width="30" height="16" color="#FFFFFF" hAlign="CENTER" vAlign="MID" text="Send" fontSize="14" fontFile="/font/sf_compact_text_semibold.otf" fontType="bitmap" zIndex="16" />
-            <hg_image id="hg_image_1768902084122_gugh" x="11" y="278" width="35" height="35" src="assets/chat/mic.png" zIndex="17">
-                <events>
-                    <event type="onClick">
-                        <action type="switchView" target="ChatBotVoiceInputView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
-                    </event>
-                </events>
-            </hg_image>
-            <hg_image id="hg_image_1768902472844_8i52" x="17" y="15" width="11" height="20" src="assets/chat/return.png" zIndex="18">
-                <events>
-                    <event type="onClick">
-                        <action type="switchView" target="ChatBotTemplateMainView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
-                    </event>
-                </events>
-            </hg_image>
-            <hg_image id="hg_image_1768902485540_kaad" x="26" y="74" width="32" height="32" src="assets/chat/general_robot.png" zIndex="19" />
-            <hg_image id="hg_image_1768902502036_7zrb" x="424" y="145" width="30" height="30" src="assets/chat/user.png" zIndex="20" />
-            <hg_image id="hg_image_1768902511432_v9ml" x="26" y="203" width="32" height="32" src="assets/chat/general_robot.png" zIndex="21" />
+            <events>
+                <event type="onKeyShortPress" keyName="Home">
+                    <action type="switchView" target="ChatBotTemplateMainView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
+                </event>
+            </events>
+            <hg_list id="hg_list_chat_messages" x="0" y="45" width="480" height="320" itemWidth="480" itemHeight="50" space="0" direction="VERTICAL" style="LIST_CLASSIC" cardStackLocation="0" noteNum="11" offset="0" outScope="0" autoAlign="false" inertia="true" loop="false" createBar="true" enableAreaDisplay="false" showOverflow="true" keepNoteAlive="false" zIndex="0" showOverflow="true">
+                <hg_list_item id="hg_list_chat_messages_item_0" x="0" y="0" width="480" height="50" index="0" locked="true" zIndex="0">
+                    <hg_rect id="hg_rect_bot_bubble_1" x="6" y="5" width="230" height="40" fillColor="#E8EEF5" borderRadius="12" zIndex="0" />
+                    <hg_label id="hg_label_bot_text_1" x="6" y="5" width="230" height="40" color="#2C3E50" wordWrap="true" vAlign="MID" hAlign="CENTER" text="Hello! How can I help you today?" fontSize="17" fontFile="/font/sf_compact_text_light.otf" fontType="bitmap" zIndex="1" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_chat_messages_item_1" x="0" y="50" width="480" height="50" index="1" locked="true" zIndex="1">
+                    <hg_rect id="hg_rect_user_bubble_1" x="299" y="5" width="175" height="40" fillColor="#4A90E2" borderRadius="12" zIndex="5" />
+                    <hg_label id="hg_label_user_text_1" x="299" y="5" width="175" height="40" color="#FFFFFF" wordWrap="true" vAlign="MID" hAlign="CENTER" text="What&#39;s the weather like?" fontSize="17" fontFile="/font/sf_compact_text_light.otf" fontType="bitmap" zIndex="6" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_chat_messages_item_2" x="0" y="100" width="480" height="50" index="2" locked="true" zIndex="2">
+                    <hg_rect id="hg_rect_bot_bubble_2" x="6" y="5" width="150" height="40" fillColor="#E8EEF5" borderRadius="12" zIndex="0" />
+                    <hg_label id="hg_label_bot_text_2" x="6" y="5" width="150" height="40" color="#2C3E50" wordWrap="true" vAlign="MID" hAlign="CENTER" text="It&#39;s sunny and 22°C." fontSize="17" fontFile="/font/sf_compact_text_light.otf" fontType="bitmap" zIndex="1" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_chat_messages_item_3" x="0" y="150" width="480" height="50" index="3" locked="true" zIndex="3">
+                    <hg_rect id="hg_rect_user_bubble_2" x="320" y="5" width="154" height="40" fillColor="#4A90E2" borderRadius="12" zIndex="5" />
+                    <hg_label id="hg_label_user_text_2" x="320" y="5" width="154" height="40" color="#FFFFFF" wordWrap="true" vAlign="MID" hAlign="CENTER" text="That&#39;s great! Thanks." fontSize="17" fontFile="/font/sf_compact_text_light.otf" fontType="bitmap" zIndex="6" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_chat_messages_item_4" x="0" y="200" width="480" height="50" index="4" locked="true" zIndex="4">
+                    <hg_rect id="hg_rect_bot_bubble_3" x="6" y="5" width="320" height="40" fillColor="#E8EEF5" borderRadius="12" zIndex="0" />
+                    <hg_label id="hg_label_bot_text_3" x="6" y="5" width="320" height="40" color="#2C3E50" wordWrap="true" vAlign="MID" hAlign="CENTER" text="You&#39;re welcome! Anything else I can help with?" fontSize="17" fontFile="/font/sf_compact_text_light.otf" fontType="bitmap" zIndex="1" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_chat_messages_item_5" x="0" y="250" width="480" height="50" index="5" locked="true" zIndex="5">
+                    <hg_rect id="hg_rect_user_bubble_3" x="260" y="5" width="214" height="40" fillColor="#4A90E2" borderRadius="12" zIndex="5" />
+                    <hg_label id="hg_label_user_text_3" x="260" y="5" width="214" height="40" color="#FFFFFF" wordWrap="true" vAlign="MID" hAlign="CENTER" text="Can you set a reminder for me?" fontSize="17" fontFile="/font/sf_compact_text_light.otf" fontType="bitmap" zIndex="6" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_chat_messages_item_6" x="0" y="300" width="480" height="50" index="6" locked="true" zIndex="6">
+                    <hg_rect id="hg_rect_bot_bubble_4" x="6" y="5" width="310" height="40" fillColor="#E8EEF5" borderRadius="12" zIndex="0" />
+                    <hg_label id="hg_label_bot_text_4" x="6" y="5" width="310" height="40" color="#2C3E50" wordWrap="true" vAlign="MID" hAlign="CENTER" text="Of course! What would you like to remember?" fontSize="17" fontFile="/font/sf_compact_text_light.otf" fontType="bitmap" zIndex="1" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_chat_messages_item_7" x="0" y="350" width="480" height="50" index="7" locked="true" zIndex="7">
+                    <hg_rect id="hg_rect_user_bubble_4" x="300" y="5" width="174" height="40" fillColor="#4A90E2" borderRadius="12" zIndex="5" />
+                    <hg_label id="hg_label_user_text_4" x="300" y="5" width="174" height="40" color="#FFFFFF" wordWrap="true" vAlign="MID" hAlign="CENTER" text="Meeting at 3 PM today." fontSize="17" fontFile="/font/sf_compact_text_light.otf" fontType="bitmap" zIndex="6" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_chat_messages_item_8" x="0" y="400" width="480" height="50" index="8" locked="true" zIndex="8" />
+                <hg_list_item id="hg_list_chat_messages_item_9" x="0" y="450" width="480" height="50" index="9" locked="true" zIndex="9" />
+                <hg_list_item id="hg_list_chat_messages_item_10" x="0" y="500" width="480" height="50" index="10" locked="true" zIndex="10" />
+            </hg_list>
+            <hg_window id="hg_window_chat_header" x="0" y="0" width="480" height="40" showBackground="false" backgroundColor="#808080" enableBlur="true" blurDegree="225" zIndex="1" />
+            <hg_image id="hg_image_chat_wifi" x="16" y="16" width="24" height="24" src="assets/main_view/wifi.png" zIndex="2" />
+            <hg_time_label id="hg_time_label_chat_time" x="165" y="10" width="150" height="35" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" characterSets="[{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;0123456789:- &quot;}]" timeFormat="HH:mm" fontFile="/font/sf_compact_text_medium.otf" fontSize="32" zIndex="3" />
+            <hg_image id="hg_image_chat_battery" x="440" y="16" width="24" height="24" src="assets/main_view/battery.png" zIndex="4" />
+            <hg_window id="hg_window_chat_voice_input" x="0" y="260" width="480" height="60" showBackground="true" backgroundColor="#1A1A2E80" enableBlur="true" blurDegree="225" zIndex="1">
+                <hg_rect id="hg_rect_wave_1" x="90" y="20" width="4" height="10" fillColor="#6BB6FF" borderRadius="2" timers="[{&quot;id&quot;:&quot;timer_0&quot;,&quot;name&quot;:&quot;动画 1&quot;,&quot;enabled&quot;:true,&quot;interval&quot;:30,&quot;reload&quot;:true,&quot;mode&quot;:&quot;custom&quot;,&quot;callback&quot;:&quot;wave1_timer_0_cb&quot;,&quot;duration&quot;:1000,&quot;stopOnComplete&quot;:true,&quot;delayStart&quot;:0,&quot;actions&quot;:[],&quot;segments&quot;:[]}]" zIndex="0" />
+                <hg_rect id="hg_rect_wave_2" x="100" y="15" width="4" height="20" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_3" x="110" y="10" width="4" height="30" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_4" x="120" y="18" width="4" height="14" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_5" x="130" y="13" width="4" height="24" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_6" x="140" y="22" width="4" height="6" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_7" x="150" y="17" width="4" height="16" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_8" x="160" y="12" width="4" height="26" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_9" x="170" y="19" width="4" height="12" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_10" x="180" y="14" width="4" height="22" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_11" x="190" y="21" width="4" height="8" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_12" x="200" y="16" width="4" height="18" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_13" x="210" y="11" width="4" height="28" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_14" x="220" y="20" width="4" height="10" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_15" x="230" y="15" width="4" height="20" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_16" x="240" y="10" width="4" height="30" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_17" x="250" y="18" width="4" height="14" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_18" x="260" y="13" width="4" height="24" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_19" x="270" y="22" width="4" height="6" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_20" x="280" y="17" width="4" height="16" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_21" x="290" y="12" width="4" height="26" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_22" x="300" y="19" width="4" height="12" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_23" x="310" y="14" width="4" height="22" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_24" x="320" y="21" width="4" height="8" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_25" x="330" y="16" width="4" height="18" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_26" x="340" y="11" width="4" height="28" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_27" x="350" y="20" width="4" height="10" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_28" x="360" y="15" width="4" height="20" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_29" x="370" y="18" width="4" height="14" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_rect id="hg_rect_wave_30" x="380" y="22" width="4" height="6" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
+                <hg_label id="hg_label_listening_hint" x="90" y="42" width="300" height="16" color="#B0C4DE" hAlign="CENTER" vAlign="MID" text="Listening..." fontSize="14" fontFile="/font/sf_compact_text_light_italic.otf" fontType="bitmap" zIndex="1" />
+            </hg_window>
         </hg_view>
     </view>
 </hml>

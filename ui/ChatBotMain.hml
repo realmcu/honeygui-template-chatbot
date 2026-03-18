@@ -10,8 +10,11 @@
                 <event type="onSwipeLeft">
                     <action type="switchView" target="ChatBotFeaturesView" switchOutStyle="SWITCH_OUT_TO_LEFT_USE_TRANSLATION" switchInStyle="SWITCH_IN_FROM_RIGHT_USE_TRANSLATION" />
                 </event>
+                <event type="onClick">
+                    <action type="switchView" target="ChatBotChatView" switchOutStyle="SWITCH_INIT_STATE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
+                </event>
             </events>
-            <hg_image id="hg_image_mainview_bg" x="105" y="82" width="135" height="80" transform="{&quot;scaleX&quot;:2,&quot;scaleY&quot;:2}" src="assets/bg.png" zIndex="0" />
+            <hg_image id="hg_image_mainview_bg" x="105" y="82" width="135" height="80" transform="{&quot;scaleX&quot;:2,&quot;scaleY&quot;:2}" src="assets/main_view/bg.png" zIndex="0" />
             <hg_rect id="hg_rect_rightEyeOuter" x="265" y="105" width="90" height="110" borderRadius="40" fillColor="#FFFFFF" opacity="255" useGradient="true" gradientDirection="vertical" gradientStops="[{&quot;position&quot;:0,&quot;color&quot;:&quot;#ffffff&quot;},{&quot;position&quot;:1,&quot;color&quot;:&quot;#3c8bbb&quot;}]" timers="[{&quot;id&quot;:&quot;timer_0&quot;,&quot;name&quot;:&quot;动画 1&quot;,&quot;enabled&quot;:true,&quot;interval&quot;:17,&quot;reload&quot;:true,&quot;mode&quot;:&quot;custom&quot;,&quot;callback&quot;:&quot;eye_animation_callback&quot;,&quot;duration&quot;:1000,&quot;stopOnComplete&quot;:true,&quot;delayStart&quot;:0,&quot;actions&quot;:[],&quot;segments&quot;:[]}]" zIndex="1" />
             <hg_time_label id="hg_time_label_time" x="165" y="10" width="150" height="35" hAlign="CENTER" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" timeFormat="HH:mm" characterSets="[{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;0123456789:- &quot;}]" fontFile="/font/sf_compact_text_medium.otf" fontSize="32" zIndex="2" />
             <hg_rect id="hg_rect_leftEyeOuter" x="123" y="105" width="90" height="110" borderRadius="40" fillColor="#FFFFFF" opacity="255" useGradient="true" gradientDirection="vertical" gradientStops="[{&quot;position&quot;:0,&quot;color&quot;:&quot;#ffffff&quot;},{&quot;position&quot;:1,&quot;color&quot;:&quot;#3c8bbb&quot;}]" timers="[{&quot;id&quot;:&quot;timer_0&quot;,&quot;name&quot;:&quot;动画 1&quot;,&quot;enabled&quot;:true,&quot;interval&quot;:17,&quot;reload&quot;:true,&quot;mode&quot;:&quot;custom&quot;,&quot;callback&quot;:&quot;eye_animation_callback&quot;,&quot;duration&quot;:1000,&quot;stopOnComplete&quot;:true,&quot;delayStart&quot;:0,&quot;actions&quot;:[],&quot;segments&quot;:[]}]" zIndex="3" />
@@ -25,8 +28,8 @@
             <hg_label id="hg_label_emotionLabel" x="140" y="261" width="200" height="40" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Normal" fontFile="/font/sf_compact_text_medium.otf" fontSize="20" characterSets="[{&quot;type&quot;:&quot;range&quot;,&quot;value&quot;:&quot;0x20-0x7E&quot;}]" zIndex="1" />
             <hg_arc id="hg_arc_left" x="73" y="56" width="190" height="190" radius="80" startAngle="240" endAngle="300" strokeWidth="15" color="#ffffff" opacity="255" useGradient="false" zIndex="1" />
             <hg_arc id="hg_arc_right" x="214" y="56" width="190" height="190" radius="80" startAngle="240" endAngle="300" strokeWidth="15" color="#ffffff" opacity="255" useGradient="false" zIndex="1" />
-            <hg_image id="hg_image_1772790563540_m213" x="16" y="16" width="24" height="24" src="assets/wifi.png" zIndex="4" />
-            <hg_image id="hg_image_1772790571500_kj38" x="440" y="16" width="24" height="24" src="assets/battery.png" zIndex="5" />
+            <hg_image id="hg_image_main_wifi" x="16" y="16" width="24" height="24" src="assets/main_view/wifi.png" zIndex="4" />
+            <hg_image id="hg_image_main_battery" x="440" y="16" width="24" height="24" src="assets/main_view/battery.png" zIndex="5" />
         </hg_view>
     </view>
 </hml>
