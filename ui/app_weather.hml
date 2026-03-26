@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hml>
+    <meta>
+        <project name="app_weather" appId="com.honeygui.chatbot" resolution="480X320" minSdk="API 2: HoneyGUI V1.1.0" pixelMode="ARGB8888" />
+        <author name="Anonymous" />
+    </meta>
+    <view>
+        <hg_view id="app_weatherView" x="0" y="0" width="480" height="320" backgroundColor="#000000" entry="true" zIndex="0">
+            <events>
+                <event type="onKeyShortPress" keyName="Home">
+                    <action type="switchView" target="ChatBotTemplateMainView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
+                </event>
+                <event type="onKeyShortPress" keyName="Menu">
+                    <action type="switchView" target="ChatBotFeaturesView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
+                </event>
+            </events>
+            <hg_list id="hg_list_weather_days" x="0" y="0" width="480" height="320" itemWidth="480" itemHeight="320" space="0" direction="HORIZONTAL" style="LIST_ZOOM" cardStackLocation="-25" noteNum="14" offset="0" outScope="0" autoAlign="true" inertia="true" loop="false" createBar="false" enableAreaDisplay="false" keepNoteAlive="false" showOverflow="true" zIndex="1" showOverflow="true">
+                <hg_list_item id="hg_list_item_day_0" x="0" y="0" width="480" height="320" index="0" zIndex="0">
+                    <events>
+                        <event type="onKeyShortPress" keyName="Home">
+                            <action type="switchView" target="ChatBotTemplateMainView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
+                        </event>
+                        <event type="onKeyShortPress" keyName="Menu">
+                            <action type="switchView" target="ChatBotFeaturesView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
+                        </event>
+                    </events>
+                    <hg_image id="hg_image_weather_bg_1" x="36" y="10" width="408" height="300" src="assets/weather/weather_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFFb0c8dd" zIndex="0" />
+                    <hg_label id="hg_label_date_1" x="43" y="21" width="100" height="24" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Today" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="25" fontType="vector" characterSets="[]" zIndex="1" />
+                    <hg_label id="hg_label_temperature_1" x="271" y="57" width="100" height="80" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="16°" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="75" fontType="vector" characterSets="[]" zIndex="2" />
+                    <hg_label id="hg_label_weather_desc_1" x="272" y="140" width="122" height="30" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Sunny Cloudy" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" characterSets="[]" zIndex="3" />
+                    <hg_label id="hg_label_wind_speed_1" x="92" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="16 km/h" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" characterSets="[]" zIndex="4" />
+                    <hg_label id="hg_label_humidity_1" x="206" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="60 %" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" characterSets="[]" zIndex="5" />
+                    <hg_label id="hg_label_uv_index_1" x="320" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="2 of 10" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" characterSets="[]" zIndex="6" />
+                    <hg_image id="hg_image_weather_icon_1" x="25" y="30" width="223" height="197" src="assets/weather/sunny_cloudy.png" blendMode="IMG_SRC_OVER_MODE" zIndex="7" />
+                    <hg_image id="hg_image_humidity_icon_1" x="223" y="207" width="35" height="35" src="assets/weather/humidity.png" zIndex="8" />
+                    <hg_image id="hg_image_wind_icon_1" x="110" y="210" width="33" height="29" src="assets/weather/wind_speed.png" zIndex="9" />
+                    <hg_image id="hg_image_uv_icon_1" x="339" y="209" width="32" height="32" src="assets/weather/ultraviolet.png" zIndex="10" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_day_1" x="480" y="0" width="480" height="320" index="1" zIndex="1">
+                    <hg_image id="hg_image_weather_bg_2" x="36" y="10" width="408" height="300" src="assets/weather/weather_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFF1F2E54" zIndex="0" />
+                    <hg_label id="hg_label_date_2" x="43" y="21" width="100" height="24" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Today" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="25" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_temperature_2" x="271" y="57" width="100" height="80" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="12°" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="75" fontType="vector" zIndex="2" />
+                    <hg_label id="hg_label_weather_desc_2" x="272" y="140" width="122" height="30" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Night Cloudy" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="3" />
+                    <hg_label id="hg_label_wind_speed_2" x="92" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="16 km/h" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="4" />
+                    <hg_label id="hg_label_humidity_2" x="206" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="60 %" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="5" />
+                    <hg_label id="hg_label_uv_index_2" x="320" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="2 of 10" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="6" />
+                    <hg_image id="hg_image_humidity_icon_2" x="223" y="207" width="35" height="35" src="assets/weather/humidity.png" zIndex="7" />
+                    <hg_image id="hg_image_wind_icon_2" x="110" y="210" width="33" height="29" src="assets/weather/wind_speed.png" zIndex="8" />
+                    <hg_image id="hg_image_uv_icon_2" x="339" y="209" width="32" height="32" src="assets/weather/ultraviolet.png" zIndex="9" />
+                    <hg_image id="hg_image_weather_icon_2" x="35" y="22" width="223" height="210" src="assets/weather/night_cloudy.png" blendMode="IMG_SRC_OVER_MODE" zIndex="10" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_day_2" x="960" y="0" width="480" height="320" index="2" zIndex="2">
+                    <hg_image id="hg_image_weather_bg_3" x="36" y="10" width="408" height="300" src="assets/weather/weather_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFFb0c8dd" zIndex="0" />
+                    <hg_label id="hg_label_date_3" x="43" y="21" width="100" height="24" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Friday" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="25" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_temperature_3" x="271" y="57" width="110" height="80" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="20°" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="75" fontType="vector" zIndex="2" />
+                    <hg_label id="hg_label_weather_desc_3" x="272" y="140" width="122" height="30" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Sunny" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="3" />
+                    <hg_label id="hg_label_wind_speed_3" x="92" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="12 km/h" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="4" />
+                    <hg_label id="hg_label_humidity_3" x="206" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="57 %" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="5" />
+                    <hg_label id="hg_label_uv_index_3" x="320" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="4 of 10" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="6" />
+                    <hg_image id="hg_image_humidity_icon_3" x="223" y="207" width="35" height="35" src="assets/weather/humidity.png" zIndex="7" />
+                    <hg_image id="hg_image_wind_icon_3" x="110" y="210" width="33" height="29" src="assets/weather/wind_speed.png" zIndex="8" />
+                    <hg_image id="hg_image_uv_icon_3" x="339" y="209" width="32" height="32" src="assets/weather/ultraviolet.png" zIndex="9" />
+                    <hg_image id="hg_image_weather_icon_3" x="16" y="-45" width="260" height="260" transform="{&quot;scaleX&quot;:1.2,&quot;scaleY&quot;:1.2}" src="assets/weather/sunny.png" blendMode="IMG_SRC_OVER_MODE" zIndex="10" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_day_3" x="1440" y="0" width="480" height="320" index="3" zIndex="3">
+                    <hg_image id="hg_image_weather_bg_4" x="36" y="10" width="408" height="300" src="assets/weather/weather_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFF1F2E54" zIndex="0" />
+                    <hg_label id="hg_label_date_4" x="43" y="21" width="100" height="24" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Friday" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="25" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_temperature_4" x="271" y="57" width="100" height="80" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="15°" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="75" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_weather_desc_4" x="272" y="140" width="122" height="30" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Night Stars" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_wind_speed_4" x="92" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="16 km/h" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_humidity_4" x="206" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="60 %" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_uv_index_4" x="320" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="2 of 10" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_image id="hg_image_humidity_icon_4" x="223" y="207" width="35" height="35" src="assets/weather/humidity.png" zIndex="3" />
+                    <hg_image id="hg_image_wind_icon_4" x="110" y="210" width="33" height="29" src="assets/weather/wind_speed.png" zIndex="4" />
+                    <hg_image id="hg_image_uv_icon_4" x="339" y="209" width="32" height="32" src="assets/weather/ultraviolet.png" zIndex="5" />
+                    <hg_image id="hg_image_weather_icon_4" x="40" y="30" width="174" height="170" transform="{&quot;scaleX&quot;:1.2,&quot;scaleY&quot;:1.2}" src="assets/weather/night_stars.png" blendMode="IMG_SRC_OVER_MODE" zIndex="6" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_day_4" x="1920" y="0" width="480" height="320" index="4" zIndex="4">
+                    <hg_image id="hg_image_weather_bg_5" x="36" y="10" width="408" height="300" src="assets/weather/weather_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFFb0c8dd" zIndex="0" />
+                    <hg_label id="hg_label_date_5" x="43" y="21" width="100" height="24" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Saturday" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="25" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_temperature_5" x="271" y="57" width="100" height="80" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="17°" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="75" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_weather_desc_5" x="272" y="140" width="122" height="30" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Cloudy" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_wind_speed_5" x="92" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="20 km/h" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_humidity_5" x="206" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="70 %" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_uv_index_5" x="320" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="2 of 10" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_image id="hg_image_humidity_icon_5" x="223" y="207" width="35" height="35" src="assets/weather/humidity.png" zIndex="3" />
+                    <hg_image id="hg_image_wind_icon_5" x="110" y="210" width="33" height="29" src="assets/weather/wind_speed.png" zIndex="4" />
+                    <hg_image id="hg_image_uv_icon_5" x="339" y="209" width="32" height="32" src="assets/weather/ultraviolet.png" zIndex="5" />
+                    <hg_image id="hg_image_weather_icon_5" x="20" y="46" width="238" height="181" src="assets/weather/cloudy.png" blendMode="IMG_SRC_OVER_MODE" zIndex="6" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_day_5" x="2400" y="0" width="480" height="320" index="5" zIndex="5">
+                    <hg_image id="hg_image_weather_bg_6" x="36" y="10" width="408" height="300" src="assets/weather/weather_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFF1F2E54" zIndex="0" />
+                    <hg_label id="hg_label_date_6" x="43" y="21" width="100" height="24" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Saturday" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="25" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_temperature_6" x="271" y="57" width="100" height="80" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="13°" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="75" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_weather_desc_6" x="272" y="140" width="122" height="30" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Night Rainy" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_wind_speed_6" x="92" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="22 km/h" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_humidity_6" x="206" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="75 %" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_uv_index_6" x="320" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="2 of 10" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_image id="hg_image_humidity_icon_6" x="223" y="207" width="35" height="35" src="assets/weather/humidity.png" zIndex="3" />
+                    <hg_image id="hg_image_wind_icon_6" x="110" y="210" width="33" height="29" src="assets/weather/wind_speed.png" zIndex="4" />
+                    <hg_image id="hg_image_uv_icon_6" x="339" y="209" width="32" height="32" src="assets/weather/ultraviolet.png" zIndex="5" />
+                    <hg_image id="hg_image_weather_icon_6" x="35" y="19" width="223" height="222" src="assets/weather/night_rainy.png" blendMode="IMG_SRC_OVER_MODE" zIndex="6" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_day_6" x="2880" y="0" width="480" height="320" index="6" zIndex="6">
+                    <hg_image id="hg_image_weather_bg_7" x="36" y="10" width="408" height="300" src="assets/weather/weather_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFFb0c8dd" zIndex="0" />
+                    <hg_label id="hg_label_date_7" x="43" y="21" width="100" height="24" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Sunday" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="25" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_temperature_7" x="271" y="57" width="100" height="80" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="16°" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="75" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_weather_desc_7" x="272" y="140" width="122" height="30" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Heavy Rainy" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_wind_speed_7" x="92" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="22 km/h" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_humidity_7" x="206" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="76 %" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_uv_index_7" x="320" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="2 of 10" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_image id="hg_image_humidity_icon_7" x="223" y="207" width="35" height="35" src="assets/weather/humidity.png" zIndex="3" />
+                    <hg_image id="hg_image_wind_icon_7" x="110" y="210" width="33" height="29" src="assets/weather/wind_speed.png" zIndex="4" />
+                    <hg_image id="hg_image_uv_icon_7" x="339" y="209" width="32" height="32" src="assets/weather/ultraviolet.png" zIndex="5" />
+                    <hg_image id="hg_image_weather_icon_7" x="25" y="26" width="254" height="216" src="assets/weather/heavyrain_storm.png" blendMode="IMG_SRC_OVER_MODE" zIndex="6" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_day_7" x="3360" y="0" width="480" height="320" index="7" zIndex="7">
+                    <hg_image id="hg_image_weather_bg_8" x="36" y="10" width="408" height="300" src="assets/weather/weather_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFF1F2E54" zIndex="0" />
+                    <hg_label id="hg_label_date_8" x="43" y="21" width="100" height="24" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Sunday" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="25" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_temperature_8" x="271" y="57" width="100" height="80" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="11°" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="75" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_weather_desc_8" x="272" y="140" width="122" height="30" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Night Cloudy" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_wind_speed_8" x="92" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="16 km/h" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_humidity_8" x="206" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="70 %" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_uv_index_8" x="320" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="2 of 10" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_image id="hg_image_humidity_icon_8" x="223" y="207" width="35" height="35" src="assets/weather/humidity.png" zIndex="3" />
+                    <hg_image id="hg_image_wind_icon_8" x="110" y="210" width="33" height="29" src="assets/weather/wind_speed.png" zIndex="4" />
+                    <hg_image id="hg_image_uv_icon_8" x="339" y="209" width="32" height="32" src="assets/weather/ultraviolet.png" zIndex="5" />
+                    <hg_image id="hg_image_weather_icon_8" x="25" y="20" width="223" height="210" src="assets/weather/night_cloudy.png" blendMode="IMG_SRC_OVER_MODE" zIndex="6" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_day_8" x="3840" y="0" width="480" height="320" index="8" zIndex="8">
+                    <hg_image id="hg_image_weather_bg_9" x="36" y="10" width="408" height="300" src="assets/weather/weather_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFFb0c8dd" zIndex="0" />
+                    <hg_label id="hg_label_date_9" x="43" y="21" width="100" height="24" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Monday" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="25" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_temperature_9" x="271" y="57" width="110" height="80" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="22°" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="75" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_weather_desc_9" x="272" y="140" width="122" height="30" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Thunder" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_wind_speed_9" x="92" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="16 km/h" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_humidity_9" x="206" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="65 %" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_uv_index_9" x="320" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="2 of 10" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_image id="hg_image_humidity_icon_9" x="223" y="207" width="35" height="35" src="assets/weather/humidity.png" zIndex="3" />
+                    <hg_image id="hg_image_wind_icon_9" x="110" y="210" width="33" height="29" src="assets/weather/wind_speed.png" zIndex="4" />
+                    <hg_image id="hg_image_uv_icon_9" x="339" y="209" width="32" height="32" src="assets/weather/ultraviolet.png" zIndex="5" />
+                    <hg_image id="hg_image_weather_icon_9" x="35" y="40" width="223" height="211" src="assets/weather/thunder.png" blendMode="IMG_SRC_OVER_MODE" zIndex="6" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_day_9" x="4320" y="0" width="480" height="320" index="9" zIndex="9">
+                    <hg_image id="hg_image_weather_bg_10" x="36" y="10" width="408" height="300" src="assets/weather/weather_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFF1F2E54" zIndex="0" />
+                    <hg_label id="hg_label_date_10" x="43" y="21" width="100" height="24" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Monday" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="25" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_temperature_10" x="271" y="57" width="100" height="80" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="17°" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="75" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_weather_desc_10" x="272" y="140" width="122" height="30" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Full Moon" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_wind_speed_10" x="92" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="20 km/h" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_humidity_10" x="206" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="60 %" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_uv_index_10" x="320" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="2 of 10" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_image id="hg_image_humidity_icon_10" x="223" y="207" width="35" height="35" src="assets/weather/humidity.png" zIndex="3" />
+                    <hg_image id="hg_image_wind_icon_10" x="110" y="210" width="33" height="29" src="assets/weather/wind_speed.png" zIndex="4" />
+                    <hg_image id="hg_image_uv_icon_10" x="339" y="209" width="32" height="32" src="assets/weather/ultraviolet.png" zIndex="5" />
+                    <hg_image id="hg_image_weather_icon_10" x="48" y="30" width="177" height="171" transform="{&quot;scaleX&quot;:1.2,&quot;scaleY&quot;:1.2}" src="assets/weather/full_moon.png" blendMode="IMG_SRC_OVER_MODE" zIndex="6" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_day_10" x="4800" y="0" width="480" height="320" index="10" zIndex="10">
+                    <hg_image id="hg_image_weather_bg_11" x="36" y="10" width="408" height="300" src="assets/weather/weather_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFFb0c8dd" zIndex="0" />
+                    <hg_label id="hg_label_date_11" x="43" y="21" width="100" height="24" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Tuesday" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="25" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_temperature_11" x="271" y="57" width="110" height="80" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="23°" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="75" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_weather_desc_11" x="272" y="140" width="122" height="30" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Sunny Cloudy" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_wind_speed_11" x="92" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="16 km/h" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_humidity_11" x="206" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="60 %" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_uv_index_11" x="320" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="2 of 10" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_image id="img_41" x="25" y="30" width="223" height="197" src="assets/weather/sunny_cloudy.png" blendMode="IMG_SRC_OVER_MODE" zIndex="2" />
+                    <hg_image id="hg_image_humidity_icon_11" x="223" y="207" width="35" height="35" src="assets/weather/humidity.png" zIndex="3" />
+                    <hg_image id="hg_image_wind_icon_11" x="110" y="210" width="33" height="29" src="assets/weather/wind_speed.png" zIndex="4" />
+                    <hg_image id="hg_image_uv_icon_11" x="339" y="209" width="32" height="32" src="assets/weather/ultraviolet.png" zIndex="5" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_day_11" x="5280" y="0" width="480" height="320" index="11" zIndex="11">
+                    <hg_image id="hg_image_weather_bg_12" x="36" y="10" width="408" height="300" src="assets/weather/weather_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFF1F2E54" zIndex="0" />
+                    <hg_label id="hg_label_date_12" x="43" y="21" width="100" height="24" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Tuesday" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="25" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_temperature_12" x="271" y="57" width="100" height="80" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="18°" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="75" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_weather_desc_12" x="272" y="140" width="122" height="30" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Night Rainy" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_wind_speed_12" x="92" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="16 km/h" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_humidity_12" x="206" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="64 %" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_uv_index_12" x="320" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="2 of 10" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_image id="hg_image_humidity_icon_12" x="223" y="207" width="35" height="35" src="assets/weather/humidity.png" zIndex="3" />
+                    <hg_image id="hg_image_wind_icon_12" x="110" y="210" width="33" height="29" src="assets/weather/wind_speed.png" zIndex="4" />
+                    <hg_image id="hg_image_uv_icon_12" x="339" y="209" width="32" height="32" src="assets/weather/ultraviolet.png" zIndex="5" />
+                    <hg_image id="hg_image_weather_icon_12" x="35" y="20" width="223" height="222" src="assets/weather/night_rainy.png" blendMode="IMG_SRC_OVER_MODE" zIndex="6" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_day_12" x="5760" y="0" width="480" height="320" index="12" zIndex="12">
+                    <hg_image id="hg_image_weather_bg_13" x="36" y="10" width="408" height="300" src="assets/weather/weather_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFFb0c8dd" zIndex="0" />
+                    <hg_label id="hg_label_date_13" x="43" y="21" width="120" height="24" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Wednesday" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="25" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_temperature_13" x="271" y="57" width="110" height="80" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="23°" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="75" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_weather_desc_13" x="272" y="140" width="122" height="30" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Rainy" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_wind_speed_13" x="92" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="24 km/h" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_humidity_13" x="206" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="80 %" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_uv_index_13" x="320" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="2 of 10" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_image id="hg_image_humidity_icon_13" x="223" y="207" width="35" height="35" src="assets/weather/humidity.png" zIndex="3" />
+                    <hg_image id="hg_image_wind_icon_13" x="110" y="210" width="33" height="29" src="assets/weather/wind_speed.png" zIndex="4" />
+                    <hg_image id="hg_image_uv_icon_13" x="339" y="209" width="32" height="32" src="assets/weather/ultraviolet.png" zIndex="5" />
+                    <hg_image id="hg_image_weather_icon_13" x="35" y="53" width="223" height="186" src="assets/weather/rainy.png" blendMode="IMG_SRC_OVER_MODE" zIndex="6" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_day_13" x="6240" y="0" width="480" height="320" index="13" zIndex="13">
+                    <hg_image id="hg_image_weather_bg_14" x="36" y="10" width="408" height="300" src="assets/weather/weather_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFF1F2E54" zIndex="0" />
+                    <hg_label id="hg_label_date_14" x="43" y="21" width="120" height="24" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Wednesday" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="25" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_temperature_14" x="271" y="57" width="100" height="80" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="19°" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="75" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_weather_desc_14" x="272" y="140" width="122" height="30" hAlign="LEFT" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Night Cloudy" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_wind_speed_14" x="92" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="18 km/h" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_humidity_14" x="206" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="70 %" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_uv_index_14" x="320" y="249" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#2A6498" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="2 of 10" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" characterSets="[{&quot;type&quot;:&quot;range&quot;,&quot;value&quot;:&quot;0x20-0x7E&quot;}]" zIndex="1" />
+                    <hg_image id="hg_image_humidity_icon_14" x="223" y="207" width="35" height="35" src="assets/weather/humidity.png" zIndex="3" />
+                    <hg_image id="hg_image_wind_icon_14" x="110" y="210" width="33" height="29" src="assets/weather/wind_speed.png" zIndex="4" />
+                    <hg_image id="hg_image_uv_icon_14" x="339" y="209" width="32" height="32" src="assets/weather/ultraviolet.png" zIndex="5" />
+                    <hg_image id="hg_image_weather_icon_14" x="25" y="24" width="223" height="210" src="assets/weather/night_cloudy.png" blendMode="IMG_SRC_OVER_MODE" zIndex="6" />
+                </hg_list_item>
+            </hg_list>
+        </hg_view>
+    </view>
+</hml>

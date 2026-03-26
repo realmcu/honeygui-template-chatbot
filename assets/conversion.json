@@ -9,16 +9,28 @@
   },
   "items": {
     "chat": {
-      "compression": "rle"
+      "compression": "rle",
+      "format": "ARGB8888"
     },
     "feature": {
-      "compression": "rle"
+      "compression": "rle",
+      "format": "ARGB8888"
     },
     "setting": {
-      "compression": "rle"
+      "compression": "rle",
+      "format": "ARGB8888"
     },
     "main_view": {
-      "compression": "rle"
+      "compression": "rle",
+      "format": "ARGB8888"
+    },
+    "weather": {
+      "compression": "none",
+      "format": "ARGB8888",
+      "dither": false
+    },
+    "weather/weather_bg.png": {
+      "format": "A8"
     }
   }
 }

@@ -7,34 +7,73 @@
     <view>
         <hg_view id="ChatBotFeaturesView" x="0" y="0" width="480" height="320" backgroundColor="#000000" entry="true" zIndex="0">
             <events>
-                <event type="onSwipeRight">
-                    <action type="switchView" target="ChatBotTemplateMainView" switchOutStyle="SWITCH_OUT_TO_RIGHT_USE_TRANSLATION" switchInStyle="SWITCH_IN_FROM_LEFT_USE_TRANSLATION" />
-                </event>
-                <event type="onSwipeLeft">
-                    <action type="switchView" target="ChatBotSettingsView" switchOutStyle="SWITCH_OUT_TO_LEFT_USE_TRANSLATION" switchInStyle="SWITCH_IN_FROM_RIGHT_USE_TRANSLATION" />
+                <event type="onKeyShortPress" keyName="Home">
+                    <action type="switchView" target="ChatBotTemplateMainView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
                 </event>
             </events>
-            <hg_image id="hg_image_1768984721134_2dsw" x="0" y="50" width="480" height="270" src="assets/chatbot_bg.png" zIndex="0" />
-            <hg_rect id="headerBg2" x="0" y="0" width="480" height="50" fillColor="#4A90E2" borderRadius="0" zIndex="1" />
-            <hg_label id="headerTitle2" x="0" y="12" width="480" height="26" color="#FFFFFF" hAlign="CENTER" vAlign="MID" text="AI Features" fontSize="20" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="2" />
-            <hg_rect id="weatherCardBg" x="20" y="70" width="140" height="110" fillColor="#FFFFFF" borderRadius="12" zIndex="3" />
-            <hg_label id="weatherTitle" x="30" y="145" width="120" height="20" color="#2C3E50" hAlign="CENTER" vAlign="MID" text="Weather" fontSize="16" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="4" />
-            <hg_rect id="calendarCardBg" x="170" y="70" width="140" height="110" fillColor="#FFFFFF" borderRadius="12" zIndex="5" />
-            <hg_label id="calendarTitle" x="180" y="145" width="120" height="20" color="#2C3E50" hAlign="CENTER" vAlign="MID" text="Calendar" fontSize="16" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="6" />
-            <hg_rect id="remindersCardBg" x="320" y="70" width="140" height="110" fillColor="#FFFFFF" borderRadius="12" zIndex="7" />
-            <hg_label id="remindersTitle" x="330" y="145" width="120" height="20" color="#2C3E50" hAlign="CENTER" vAlign="MID" text="Reminders" fontSize="16" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="8" />
-            <hg_rect id="alarmCardBg" x="20" y="190" width="140" height="110" fillColor="#FFFFFF" borderRadius="12" zIndex="9" />
-            <hg_label id="alarmTitle" x="30" y="265" width="120" height="20" color="#2C3E50" hAlign="CENTER" vAlign="MID" text="Alarm" fontSize="16" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="10" />
-            <hg_rect id="newsCardBg" x="170" y="190" width="140" height="110" fillColor="#FFFFFF" borderRadius="12" zIndex="11" />
-            <hg_label id="newsTitle" x="180" y="265" width="120" height="20" color="#2C3E50" hAlign="CENTER" vAlign="MID" text="News" fontSize="16" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="12" />
-            <hg_rect id="musicCardBg" x="320" y="190" width="140" height="110" fillColor="#FFFFFF" borderRadius="12" zIndex="13" />
-            <hg_label id="musicTitle" x="330" y="265" width="120" height="20" color="#2C3E50" hAlign="CENTER" vAlign="MID" text="Music" fontSize="16" fontFile="/font/sf_compact_text_medium.otf" fontType="bitmap" zIndex="14" />
-            <hg_image id="hg_image_1768816325527_mptv" x="65" y="90" width="100" height="100" transform="{&quot;scaleX&quot;:0.5,&quot;scaleY&quot;:0.5}" src="assets/feature/app_weather_icon.png" zIndex="15" />
-            <hg_image id="hg_image_1768819088485_lblv" x="214" y="90" width="100" height="100" transform="{&quot;scaleX&quot;:0.5,&quot;scaleY&quot;:0.5}" src="assets/feature/app_calendar_icon.png" zIndex="16" />
-            <hg_image id="hg_image_1768819143830_f1hq" x="363" y="90" width="100" height="100" transform="{&quot;scaleX&quot;:0.5,&quot;scaleY&quot;:0.5}" src="assets/feature/app_reminders_icon.png" zIndex="17" />
-            <hg_image id="hg_image_1768819164889_03ph" x="65" y="209" width="100" height="100" transform="{&quot;scaleX&quot;:0.5,&quot;scaleY&quot;:0.5}" src="assets/feature/app_alarm_clock_icon.png" zIndex="18" />
-            <hg_image id="hg_image_1768819185218_guqx" x="214" y="209" width="100" height="100" transform="{&quot;scaleX&quot;:0.5,&quot;scaleY&quot;:0.5}" src="assets/feature/app_news_icon.png" zIndex="19" />
-            <hg_image id="hg_image_1768819213847_t0mh" x="363" y="209" width="100" height="100" transform="{&quot;scaleX&quot;:0.5,&quot;scaleY&quot;:0.5}" src="assets/feature/app_music_icon.png" zIndex="20" />
+            <hg_image id="hg_image_features_wifi" x="16" y="16" width="24" height="24" src="assets/main_view/wifi.png" zIndex="2" />
+            <hg_time_label id="hg_time_label_features_time" x="165" y="10" width="150" height="35" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" characterSets="[{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;0123456789:- &quot;}]" timeFormat="HH:mm" fontFile="/font/Inter24pt-Medium.ttf" fontSize="32" zIndex="3" />
+            <hg_image id="hg_image_features_battery" x="440" y="16" width="24" height="24" src="assets/main_view/battery.png" zIndex="4" />
+            <hg_list id="hg_list_apps" x="0" y="73" width="480" height="200" itemWidth="130" itemHeight="200" space="0" direction="HORIZONTAL" style="LIST_CLASSIC" cardStackLocation="0" noteNum="5" offset="0" outScope="0" autoAlign="false" inertia="true" loop="false" createBar="false" enableAreaDisplay="false" showOverflow="true" keepNoteAlive="false" zIndex="5" showOverflow="true">
+                <hg_list_item id="hg_list_item_apps_0" x="0" y="0" width="130" height="200" index="0" locked="true" zIndex="0">
+                    <hg_rect id="hg_rect_weather_card" x="15" y="10" width="100" height="85" fillColor="#1A1A2E" borderRadius="12" opacity="200" useGradient="true" gradientDirection="vertical" gradientStops="[{&quot;position&quot;:0,&quot;color&quot;:&quot;#2D3748&quot;},{&quot;position&quot;:1,&quot;color&quot;:&quot;#1A202C&quot;}]" zIndex="0">
+                        <events>
+                            <event type="onClick">
+                                <action type="switchView" target="app_weatherView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
+                            </event>
+                        </events>
+                    </hg_rect>
+                    <hg_label id="hg_label_weather_title" x="20" y="75" width="90" height="20" color="#FFFFFF" hAlign="CENTER" vAlign="MID" text="Weather" fontSize="14" fontFile="/font/Inter24pt-Medium.ttf" fontType="bitmap" zIndex="2" />
+                    <hg_rect id="hg_rect_music_card" x="15" y="105" width="100" height="85" fillColor="#1A1A2E" borderRadius="12" opacity="200" useGradient="true" gradientDirection="vertical" gradientStops="[{&quot;position&quot;:0,&quot;color&quot;:&quot;#2D3748&quot;},{&quot;position&quot;:1,&quot;color&quot;:&quot;#1A202C&quot;}]" zIndex="3">
+                        <events>
+                            <event type="onClick">
+                                <action type="switchView" target="app_musicView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
+                            </event>
+                        </events>
+                    </hg_rect>
+                    <hg_label id="hg_label_music_title" x="20" y="170" width="90" height="20" color="#FFFFFF" hAlign="CENTER" vAlign="MID" text="Music" fontSize="14" fontFile="/font/Inter24pt-Medium.ttf" fontType="bitmap" zIndex="5" />
+                    <hg_image id="hg_image_weather_icon" x="40" y="25" width="50" height="50" src="assets/feature/app_weather_icon.png" zIndex="6" />
+                    <hg_image id="hg_image_music_icon" x="40" y="120" width="50" height="50" src="assets/feature/app_music_icon.png" zIndex="7" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_apps_1" x="130" y="0" width="130" height="200" index="1" locked="true" zIndex="1">
+                    <hg_rect id="hg_rect_calendar_card" x="15" y="10" width="100" height="85" fillColor="#1A1A2E" borderRadius="12" opacity="200" useGradient="true" gradientDirection="vertical" gradientStops="[{&quot;position&quot;:0,&quot;color&quot;:&quot;#2D3748&quot;},{&quot;position&quot;:1,&quot;color&quot;:&quot;#1A202C&quot;}]" zIndex="0" />
+                    <hg_label id="hg_label_calendar_title" x="20" y="75" width="90" height="20" color="#FFFFFF" hAlign="CENTER" vAlign="MID" text="Calendar" fontSize="14" fontFile="/font/Inter24pt-Medium.ttf" fontType="bitmap" zIndex="2" />
+                    <hg_rect id="hg_rect_smarthome_card" x="15" y="105" width="100" height="85" fillColor="#1A1A2E" borderRadius="12" opacity="200" useGradient="true" gradientDirection="vertical" gradientStops="[{&quot;position&quot;:0,&quot;color&quot;:&quot;#2D3748&quot;},{&quot;position&quot;:1,&quot;color&quot;:&quot;#1A202C&quot;}]" zIndex="3" />
+                    <hg_label id="hg_label_smarthome_title" x="20" y="170" width="90" height="20" color="#FFFFFF" hAlign="CENTER" vAlign="MID" text="SmartHome" fontSize="14" fontFile="/font/Inter24pt-Medium.ttf" fontType="bitmap" zIndex="6" />
+                    <hg_image id="hg_image_calendar_icon" x="40" y="25" width="50" height="50" src="assets/feature/app_calendar_icon.png" zIndex="7" />
+                    <hg_image id="hg_image_home_icon" x="40" y="120" width="50" height="50" src="assets/feature/app_home_icon.png" zIndex="8" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_apps_2" x="260" y="0" width="130" height="200" index="2" locked="true" zIndex="2">
+                    <hg_rect id="hg_rect_reminders_card" x="15" y="10" width="100" height="85" fillColor="#1A1A2E" borderRadius="12" opacity="200" useGradient="true" gradientDirection="vertical" gradientStops="[{&quot;position&quot;:0,&quot;color&quot;:&quot;#2D3748&quot;},{&quot;position&quot;:1,&quot;color&quot;:&quot;#1A202C&quot;}]" zIndex="0" />
+                    <hg_label id="hg_label_reminders_title" x="20" y="75" width="90" height="20" color="#FFFFFF" hAlign="CENTER" vAlign="MID" text="Reminders" fontSize="14" fontFile="/font/Inter24pt-Medium.ttf" fontType="bitmap" zIndex="1" />
+                    <hg_rect id="hg_rect_monitor_card" x="15" y="105" width="100" height="85" fillColor="#1A1A2E" borderRadius="12" opacity="200" useGradient="true" gradientDirection="vertical" gradientStops="[{&quot;position&quot;:0,&quot;color&quot;:&quot;#2D3748&quot;},{&quot;position&quot;:1,&quot;color&quot;:&quot;#1A202C&quot;}]" zIndex="2" />
+                    <hg_label id="hg_label_monitor_title" x="20" y="170" width="90" height="20" color="#FFFFFF" hAlign="CENTER" vAlign="MID" text="Monitor" fontSize="14" fontFile="/font/Inter24pt-Medium.ttf" fontType="bitmap" zIndex="3" />
+                    <hg_image id="hg_image_reminders_icon" x="40" y="25" width="50" height="50" src="assets/feature/app_reminders_icon.png" zIndex="4" />
+                    <hg_image id="hg_image_monitor_icon" x="40" y="120" width="50" height="50" src="assets/feature/app_monitor_icon.png" zIndex="6" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_apps_3" x="390" y="0" width="130" height="200" index="3" locked="true" zIndex="3">
+                    <hg_rect id="hg_rect_alarm_card" x="15" y="10" width="100" height="85" fillColor="#1A1A2E" borderRadius="12" opacity="200" useGradient="true" gradientDirection="vertical" gradientStops="[{&quot;position&quot;:0,&quot;color&quot;:&quot;#2D3748&quot;},{&quot;position&quot;:1,&quot;color&quot;:&quot;#1A202C&quot;}]" zIndex="0" />
+                    <hg_label id="hg_label_alarm_title" x="20" y="75" width="90" height="20" color="#FFFFFF" hAlign="CENTER" vAlign="MID" text="Alarm" fontSize="14" fontFile="/font/Inter24pt-Medium.ttf" fontType="bitmap" zIndex="2" />
+                    <hg_rect id="hg_rect_game_card" x="15" y="105" width="100" height="85" fillColor="#1A1A2E" borderRadius="12" opacity="200" useGradient="true" gradientDirection="vertical" gradientStops="[{&quot;position&quot;:0,&quot;color&quot;:&quot;#2D3748&quot;},{&quot;position&quot;:1,&quot;color&quot;:&quot;#1A202C&quot;}]" zIndex="3" />
+                    <hg_label id="hg_label_game_title" x="20" y="170" width="90" height="20" color="#FFFFFF" hAlign="CENTER" vAlign="MID" text="Game" fontSize="14" fontFile="/font/Inter24pt-Medium.ttf" fontType="bitmap" zIndex="9" />
+                    <hg_image id="hg_image_alarm_icon" x="40" y="25" width="50" height="50" src="assets/feature/app_alarm_clock_icon.png" zIndex="10" />
+                    <hg_image id="hg_image_game_icon" x="40" y="120" width="50" height="50" src="assets/feature/app_game_icon.png" zIndex="11" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_apps_4" x="520" y="0" width="130" height="200" index="4" locked="true" zIndex="4">
+                    <hg_rect id="hg_rect_news_card" x="15" y="10" width="100" height="85" fillColor="#1A1A2E" borderRadius="12" opacity="200" useGradient="true" gradientDirection="vertical" gradientStops="[{&quot;position&quot;:0,&quot;color&quot;:&quot;#2D3748&quot;},{&quot;position&quot;:1,&quot;color&quot;:&quot;#1A202C&quot;}]" zIndex="0" />
+                    <hg_label id="hg_label_news_title" x="20" y="75" width="90" height="20" color="#FFFFFF" hAlign="CENTER" vAlign="MID" text="News" fontSize="14" fontFile="/font/Inter24pt-Medium.ttf" fontType="bitmap" zIndex="2" />
+                    <hg_rect id="hg_rect_settings_card" x="15" y="105" width="100" height="85" fillColor="#1A1A2E" borderRadius="12" opacity="200" useGradient="true" gradientDirection="vertical" gradientStops="[{&quot;position&quot;:0,&quot;color&quot;:&quot;#2D3748&quot;},{&quot;position&quot;:1,&quot;color&quot;:&quot;#1A202C&quot;}]" zIndex="3">
+                        <events>
+                            <event type="onClick">
+                                <action type="switchView" target="ChatBotSettingsView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
+                            </event>
+                        </events>
+                    </hg_rect>
+                    <hg_label id="hg_label_settings_title" x="20" y="170" width="90" height="20" color="#FFFFFF" hAlign="CENTER" vAlign="MID" text="Settings" fontSize="14" fontFile="/font/Inter24pt-Medium.ttf" fontType="bitmap" zIndex="6" />
+                    <hg_image id="hg_image_news_icon" x="40" y="25" width="50" height="50" src="assets/feature/app_news_icon.png" zIndex="7" />
+                    <hg_image id="hg_image_settings_icon" x="40" y="120" width="50" height="50" src="assets/feature/app_setting_icon.png" zIndex="8" />
+                </hg_list_item>
+            </hg_list>
         </hg_view>
     </view>
 </hml>
