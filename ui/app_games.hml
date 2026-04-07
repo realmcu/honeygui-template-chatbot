@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hml>
+    <meta>
+        <project name="app_games" appId="com.honeygui.chatbot" resolution="480X320" minSdk="API 2: HoneyGUI V1.1.0" pixelMode="ARGB8888" />
+        <author name="Anonymous" />
+    </meta>
+    <view>
+        <hg_view id="app_gamesMainView" x="0" y="0" width="480" height="320" backgroundColor="#000000" entry="false" zIndex="0">
+            <events>
+                <event type="onKeyShortPress" keyName="Home">
+                    <action type="switchView" target="ChatBotTemplateMainView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
+                </event>
+                <event type="onKeyShortPress" keyName="Menu">
+                    <action type="switchView" target="ChatBotFeaturesView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
+                </event>
+            </events>
+            <hg_label id="lbl_2" x="140" y="140" width="200" height="40" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Developing" fontFile="/font/Inter24pt-Medium.ttf" fontSize="24" zIndex="1" />
+        </hg_view>
+    </view>
+</hml>

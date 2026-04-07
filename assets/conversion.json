@@ -31,6 +31,44 @@
     },
     "weather/weather_bg.png": {
       "format": "A8"
+    },
+    "music": {
+      "compression": "none",
+      "format": "ARGB8888"
+    },
+    "smart_home": {
+      "format": "ARGB8888",
+      "compression": "rle"
+    },
+    "smart_home/list_bg.png": {
+      "format": "A8",
+      "compression": "none"
+    },
+    "reminder": {
+      "format": "ARGB8888",
+      "compression": "rle"
+    },
+    "reminder/reminder_bg.png": {
+      "format": "A8",
+      "compression": "rle"
+    },
+    "alarm": {
+      "format": "ARGB8888"
+    },
+    "alarm/alarm_bg.png": {
+      "format": "A8"
+    },
+    "news": {
+      "format": "ARGB8888"
+    },
+    "news/news_bg.png": {
+      "format": "A8"
     }
+  },
+  "alwaysConvert": {
+    "images": [],
+    "videos": [],
+    "models": [],
+    "fonts": []
   }
 }

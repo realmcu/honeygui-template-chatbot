@@ -5,13 +5,13 @@
         <author name="HoneyGUI Design" />
     </meta>
     <view>
-        <hg_view id="ChatBotChatView" x="0" y="0" width="480" height="320" backgroundColor="#000000" entry="true" zIndex="0">
+        <hg_view id="ChatBotChatView" x="0" y="0" width="480" height="320" backgroundColor="#000000" entry="false" zIndex="0">
             <events>
                 <event type="onKeyShortPress" keyName="Home">
                     <action type="switchView" target="ChatBotTemplateMainView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
                 </event>
             </events>
-            <hg_list id="hg_list_chat_messages" x="0" y="45" width="480" height="320" itemWidth="480" itemHeight="50" space="0" direction="VERTICAL" style="LIST_CLASSIC" cardStackLocation="0" noteNum="11" offset="0" outScope="0" autoAlign="false" inertia="true" loop="false" createBar="true" enableAreaDisplay="false" showOverflow="true" keepNoteAlive="false" zIndex="0" showOverflow="true">
+            <hg_list id="hg_list_chat_messages" x="0" y="45" width="480" height="320" itemWidth="480" itemHeight="50" space="0" direction="VERTICAL" style="LIST_CLASSIC" cardStackLocation="0" noteNum="11" offset="-350" outScope="0" autoAlign="false" inertia="true" loop="false" createBar="true" enableAreaDisplay="false" showOverflow="true" keepNoteAlive="false" zIndex="0" showOverflow="true">
                 <hg_list_item id="hg_list_chat_messages_item_0" x="0" y="0" width="480" height="50" index="0" locked="true" zIndex="0">
                     <hg_rect id="hg_rect_bot_bubble_1" x="6" y="5" width="230" height="40" fillColor="#E8EEF5" borderRadius="12" zIndex="0" />
                     <hg_label id="hg_label_bot_text_1" x="6" y="5" width="230" height="40" color="#2C3E50" wordWrap="true" vAlign="MID" hAlign="CENTER" text="Hello! How can I help you today?" fontSize="17" fontFile="/font/Inter_24pt_Light.ttf" fontType="bitmap" zIndex="1" />
@@ -83,7 +83,7 @@
                 <hg_rect id="hg_rect_wave_28" x="360" y="15" width="4" height="20" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
                 <hg_rect id="hg_rect_wave_29" x="370" y="18" width="4" height="14" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
                 <hg_rect id="hg_rect_wave_30" x="380" y="22" width="4" height="6" fillColor="#6BB6FF" borderRadius="2" zIndex="0" />
-                <hg_label id="hg_label_listening_hint" x="90" y="42" width="300" height="16" color="#B0C4DE" hAlign="CENTER" vAlign="MID" text="Listening..." fontSize="14" fontFile="/font/sf_compact_text_light_italic.otf" fontType="bitmap" zIndex="1" />
+                <hg_label id="hg_label_listening_hint" x="90" y="42" width="300" height="16" color="#B0C4DE" hAlign="CENTER" vAlign="MID" text="Listening..." fontSize="16" fontFile="/font/Inter24pt-LightItalic.ttf" fontType="bitmap" zIndex="1" />
             </hg_window>
         </hg_view>
     </view>

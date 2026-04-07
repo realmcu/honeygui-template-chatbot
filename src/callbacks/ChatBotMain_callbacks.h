@@ -6,11 +6,13 @@
 #include "gui_obj_focus.h"
 
 // Timer animation counters (defined in callbacks.c)
-extern uint16_t hg_rect_rightEyeOuter_timer_cnt;
 extern uint16_t hg_rect_leftEyeOuter_timer_cnt;
 
 // Event callback function declarations
 void hg_rect_emotionButton_clicked_cb(void *obj, gui_event_t *e);
+void hg_rect_notification_1_bg_clicked_cb(void *obj, gui_event_t *e);
+void hg_rect_notification_2_bg_clicked_cb(void *obj, gui_event_t *e);
+void hg_rect_notification_4_bg_clicked_cb(void *obj, gui_event_t *e);
 void hg_time_label_time_time_update_cb(void *p);
 
 // User-configured timer callback function declarations

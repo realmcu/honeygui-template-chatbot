@@ -9,7 +9,6 @@
 extern char hg_time_label_time_time_str[10];
 
 // Timer animation counters
-uint16_t hg_rect_rightEyeOuter_timer_cnt = 0;
 uint16_t hg_rect_leftEyeOuter_timer_cnt = 0;
 
 // Event callback function implementations
@@ -19,6 +18,27 @@ void hg_rect_emotionButton_clicked_cb(void *obj, gui_event_t *e)
     GUI_UNUSED(obj);
     GUI_UNUSED(e);
     hg_rect_emotionButton_onClick(obj, e);
+}
+
+void hg_rect_notification_1_bg_clicked_cb(void *obj, gui_event_t *e)
+{
+    GUI_UNUSED(obj);
+    GUI_UNUSED(e);
+    gui_view_switch_direct(gui_view_get_current(), "app_weatherView", SWITCH_OUT_ANIMATION_FADE, SWITCH_IN_ANIMATION_FADE);
+}
+
+void hg_rect_notification_2_bg_clicked_cb(void *obj, gui_event_t *e)
+{
+    GUI_UNUSED(obj);
+    GUI_UNUSED(e);
+    gui_view_switch_direct(gui_view_get_current(), "app_musicView", SWITCH_OUT_ANIMATION_FADE, SWITCH_IN_ANIMATION_FADE);
+}
+
+void hg_rect_notification_4_bg_clicked_cb(void *obj, gui_event_t *e)
+{
+    GUI_UNUSED(obj);
+    GUI_UNUSED(e);
+    gui_view_switch_direct(gui_view_get_current(), "ChatBotSettingsView", SWITCH_OUT_ANIMATION_FADE, SWITCH_IN_ANIMATION_FADE);
 }
 
 void hg_time_label_time_time_update_cb(void *p)
@@ -41,7 +61,7 @@ void hg_time_label_time_time_update_cb(void *p)
 
 /**
  * 动画 1
- * Component: hg_rect_rightEyeOuter
+ * Component: hg_rect_leftEyeOuter
  */
 void eye_animation_callback(void *obj)
 {

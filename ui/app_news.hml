@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hml>
+    <meta>
+        <project name="app_news" appId="com.honeygui.chatbot" resolution="480X320" minSdk="API 2: HoneyGUI V1.1.0" pixelMode="ARGB8888" />
+        <author name="Anonymous" />
+    </meta>
+    <view>
+        <hg_view id="app_newsMainView" x="0" y="0" width="480" height="320" backgroundColor="#000000" entry="false" zIndex="0">
+            <events>
+                <event type="onKeyShortPress" keyName="Home">
+                    <action type="switchView" target="ChatBotTemplateMainView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
+                </event>
+                <event type="onKeyShortPress" keyName="Menu">
+                    <action type="switchView" target="ChatBotFeaturesView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
+                </event>
+            </events>
+            <hg_list id="hg_list_news" x="60" y="0" width="360" height="320" itemWidth="360" itemHeight="320" space="20" direction="VERTICAL" style="LIST_CARD" cardStackLocation="-50" noteNum="4" offset="0" outScope="0" autoAlign="true" inertia="true" loop="false" createBar="false" enableAreaDisplay="false" keepNoteAlive="false" showOverflow="true" zIndex="1" showOverflow="true">
+                <hg_list_item id="hg_list_item_0" x="0" y="0" width="360" height="320" index="0" zIndex="0">
+                    <hg_image id="hg_image_bg_0" x="0" y="18" width="360" height="284" src="assets/news/news_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" zIndex="1" />
+                    <hg_image id="hg_image_laptop" x="10" y="28" width="340" height="190" src="assets/news/laptop.png" zIndex="2" />
+                    <hg_label id="hg_label_title_0" x="15" y="225" width="330" height="24" hAlign="LEFT" vAlign="MID" color="#000000" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" text="How To Choose The Right Laptop For..." fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_desc_0" x="15" y="254" width="330" height="50" hAlign="LEFT" vAlign="TOP" color="#4b4b4b" letterSpacing="0" lineSpacing="5" wordWrap="true" wordBreak="true" text="Choosing The Right Laptop For Programming Can Be A Tough Process. It&#39;s Easy To Get Confused When ..." fontFile="/font/Inter_24pt_Light.ttf" fontSize="17" fontType="vector" zIndex="1" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_1" x="0" y="340" width="360" height="320" index="1" zIndex="1">
+                    <hg_image id="hg_image_bg_1" x="0" y="18" width="360" height="284" src="assets/news/news_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" zIndex="1" />
+                    <hg_image id="hg_image_boat" x="10" y="28" width="340" height="190" src="assets/news/boat.png" zIndex="2" />
+                    <hg_label id="hg_label_title_1" x="15" y="225" width="330" height="24" hAlign="LEFT" vAlign="MID" color="#000000" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Opening Day of Boating Season, Seattle WA" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_desc_1" x="15" y="254" width="330" height="50" hAlign="LEFT" vAlign="TOP" color="#4b4b4b" letterSpacing="0" lineSpacing="5" wordWrap="true" wordBreak="true" text="Of Course The Puget Sound is Very Watery, And Where There is Water, There Are Boats. Today is ..." fontFile="/font/Inter_24pt_Light.ttf" fontSize="17" fontType="vector" zIndex="1" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_2" x="0" y="680" width="360" height="320" index="2" zIndex="2">
+                    <hg_image id="hg_image_bg_2" x="0" y="18" width="360" height="284" src="assets/news/news_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" zIndex="1" />
+                    <hg_image id="hg_image_car" x="10" y="28" width="340" height="190" src="assets/news/car.png" zIndex="2" />
+                    <hg_label id="hg_label_title_2" x="15" y="225" width="330" height="24" hAlign="LEFT" vAlign="MID" color="#000000" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="How We Built The First Real Self-Driving Car" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_desc_2" x="15" y="254" width="330" height="50" hAlign="LEFT" vAlign="TOP" color="#4b4b4b" letterSpacing="0" lineSpacing="5" wordWrap="true" wordBreak="true" text="Electric Self-Driving Cars Will Save Millions Of Lives And Significantly Accelerate The World&#39;s Trans ..." fontFile="/font/Inter_24pt_Light.ttf" fontSize="17" fontType="vector" zIndex="1" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_3" x="0" y="1020" width="360" height="320" index="3" zIndex="3">
+                    <hg_image id="hg_image_bg_3" x="0" y="18" width="360" height="284" src="assets/news/news_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" zIndex="1" />
+                    <hg_image id="hg_image_food" x="10" y="28" width="340" height="190" src="assets/news/food.png" zIndex="2" />
+                    <hg_label id="hg_label_title_3" x="15" y="225" width="330" height="24" hAlign="LEFT" vAlign="MID" color="#000000" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="How To Persuade Your Parents To Busy Fast ..." fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" fontType="vector" zIndex="1" />
+                    <hg_label id="hg_label_desc_3" x="15" y="254" width="330" height="50" hAlign="LEFT" vAlign="TOP" color="#4b4b4b" letterSpacing="0" lineSpacing="5" wordWrap="true" wordBreak="true" text="Parents Often Don&#39;t Want To Buy Fast Food. They May Be Worried That It&#39;s Too Expensive, Unhealth ..." fontFile="/font/Inter_24pt_Light.ttf" fontSize="17" fontType="vector" zIndex="1" />
+                </hg_list_item>
+            </hg_list>
+        </hg_view>
+    </view>
+</hml>

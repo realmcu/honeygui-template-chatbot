@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hml>
+    <meta>
+        <project name="app_reminder" appId="com.honeygui.chatbot" resolution="480X320" minSdk="API 2: HoneyGUI V1.1.0" pixelMode="ARGB8888" />
+        <author name="Anonymous" />
+    </meta>
+    <view>
+        <hg_view id="app_reminderMainView" x="0" y="0" width="480" height="320" backgroundColor="#000000" entry="false" zIndex="0">
+            <events>
+                <event type="onKeyShortPress" keyName="Home">
+                    <action type="switchView" target="ChatBotTemplateMainView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
+                </event>
+                <event type="onKeyShortPress" keyName="Menu">
+                    <action type="switchView" target="ChatBotFeaturesView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
+                </event>
+            </events>
+            <hg_list id="hg_list_reminder" x="0" y="0" width="480" height="320" itemWidth="480" itemHeight="320" space="0" direction="VERTICAL" style="LIST_CLASSIC" cardStackLocation="0" noteNum="2" offset="0" outScope="0" autoAlign="true" inertia="true" loop="false" createBar="false" enableAreaDisplay="false" keepNoteAlive="false" showOverflow="true" zIndex="1" showOverflow="true">
+                <hg_list_item id="hg_list_item_drink" x="0" y="0" width="480" height="320" index="0" zIndex="0">
+                    <hg_image id="hg_image_drink_bg" x="30" y="30" width="142" height="261" src="assets/reminder/reminder_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFF7FC4ED" zIndex="0" />
+                    <hg_image id="hg_image_drink_icon" x="61" y="75" width="80" height="125" src="assets/reminder/drink_water.png" zIndex="1" />
+                    <hg_label id="hg_label_drink_title" x="26" y="217" width="150" height="30" hAlign="CENTER" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Drinking water" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="21" zIndex="2" />
+                    <hg_label id="hg_label_drink_subtitle" x="26" y="245" width="150" height="30" hAlign="CENTER" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Daily: 2L" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" zIndex="3" />
+                    <hg_label id="hg_label_drink_goal_key" x="216" y="30" width="150" height="30" hAlign="LEFT" vAlign="MID" color="#7FC4ED" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Daily goals" fontFile="/font/sf_compact_regular.otf" fontSize="19" zIndex="4" />
+                    <hg_label id="hg_label_drink_goal_val" x="357" y="30" width="100" height="30" hAlign="RIGHT" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="2000ml" fontFile="/font/sf_compact_regular.otf" fontSize="19" zIndex="5" />
+                    <hg_label id="hg_label_drink_qty_key" x="216" y="103" width="150" height="30" hAlign="LEFT" vAlign="MID" color="#7FC4ED" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Quantity per time" fontFile="/font/sf_compact_regular.otf" fontSize="19" zIndex="6" />
+                    <hg_label id="hg_label_drink_qty_val" x="357" y="103" width="100" height="30" hAlign="RIGHT" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="2000ml" fontFile="/font/sf_compact_regular.otf" fontSize="19" zIndex="7" />
+                    <hg_label id="hg_label_drink_hour" x="313" y="192" width="30" height="30" hAlign="LEFT" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="h" fontFile="/font/sf_compact_regular.otf" fontSize="19" zIndex="8" />
+                    <hg_label id="hg_label_drink_min" x="404" y="192" width="30" height="30" hAlign="LEFT" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="m" fontFile="/font/sf_compact_regular.otf" fontSize="19" zIndex="9" />
+                    <hg_image id="hg_image_drink_progress1_bg" x="216" y="70" width="250" height="6" src="assets/reminder/progress_bottom.png" zIndex="10" />
+                    <hg_image id="hg_image_drink_progress2_bg" x="216" y="143" width="250" height="6" src="assets/reminder/progress_bottom.png" zIndex="11" />
+                    <hg_image id="hg_image_drink_progress1_fg" x="216" y="70" width="28" height="6" src="assets/reminder/progress_top.png" zIndex="12" />
+                    <hg_image id="hg_image_drink_progress2_fg" x="216" y="143" width="28" height="6" src="assets/reminder/progress_top.png" zIndex="13" />
+                    <hg_image id="hg_image_drink_slider1" x="231" y="64" width="18" height="18" src="assets/reminder/Slider.png" zIndex="14" />
+                    <hg_image id="hg_image_drink_slider2" x="231" y="137" width="18" height="18" src="assets/reminder/Slider.png" zIndex="15" />
+                    <hg_image id="hg_image_drink_time_hour_bg" x="253" y="182" width="50" height="50" src="assets/reminder/time_bg.png" zIndex="16" />
+                    <hg_label id="hg_label_drink_time_hour" x="253" y="195" width="50" height="24" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="00" fontFile="/font/sf_compact_regular.otf" fontSize="28" zIndex="17" />
+                    <hg_image id="hg_image_drink_time_min_bg" x="348" y="182" width="50" height="50" src="assets/reminder/time_bg.png" zIndex="18" />
+                    <hg_label id="hg_label_drink_time_min" x="348" y="195" width="50" height="24" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="01" fontFile="/font/sf_compact_regular.otf" fontSize="28" zIndex="19" />
+                    <hg_image id="hg_image_drink_start_bg" x="216" y="257" width="250" height="34" src="assets/reminder/start_bg.png" zIndex="20" />
+                    <hg_label id="hg_label_drink_start" x="216" y="257" width="230" height="34" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="start" fontFile="/font/sf_compact_regular.otf" fontSize="26" zIndex="21" />
+                    <hg_image id="hg_image_drink_arrow" x="358" y="258" width="40" height="40" transform="{&quot;scaleX&quot;:0.8,&quot;scaleY&quot;:0.8}" src="assets/smart_home/chevron_right.png" zIndex="22" />
+                </hg_list_item>
+                <hg_list_item id="hg_list_item_stretch" x="0" y="320" width="480" height="320" index="1" zIndex="1">
+                    <hg_image id="hg_image_stretch_bg" x="30" y="30" width="142" height="261" src="assets/reminder/reminder_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFF7FC4ED" zIndex="0" />
+                    <hg_image id="hg_image_stretch_icon" x="51" y="75" width="100" height="113" src="assets/reminder/stretch.png" zIndex="1" />
+                    <hg_label id="hg_label_stretch_title" x="26" y="217" width="150" height="30" hAlign="CENTER" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Stretching" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="21" zIndex="2" />
+                    <hg_label id="hg_label_stretch_subtitle" x="26" y="245" width="150" height="30" hAlign="CENTER" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Daily: 3 sets" fontFile="/font/Inter24pt-Medium.ttf" fontSize="19" zIndex="3" />
+                    <hg_label id="hg_label_stretch_goal_key" x="216" y="30" width="150" height="30" hAlign="LEFT" vAlign="MID" color="#7FC4ED" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Daily goals" fontFile="/font/sf_compact_regular.otf" fontSize="19" zIndex="4" />
+                    <hg_label id="hg_label_stretch_goal_val" x="357" y="30" width="100" height="30" hAlign="RIGHT" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="3 sets" fontFile="/font/sf_compact_regular.otf" fontSize="19" zIndex="5" />
+                    <hg_label id="hg_label_stretch_dur_key" x="216" y="103" width="150" height="30" hAlign="LEFT" vAlign="MID" color="#7FC4ED" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Duration per set" fontFile="/font/sf_compact_regular.otf" fontSize="19" zIndex="6" />
+                    <hg_label id="hg_label_stretch_dur_val" x="357" y="103" width="100" height="30" hAlign="RIGHT" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="10 min" fontFile="/font/sf_compact_regular.otf" fontSize="19" zIndex="7" />
+                    <hg_label id="hg_label_stretch_hour" x="313" y="192" width="30" height="30" hAlign="LEFT" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="h" fontFile="/font/sf_compact_regular.otf" fontSize="19" zIndex="8" />
+                    <hg_label id="hg_label_stretch_min" x="404" y="192" width="30" height="30" hAlign="LEFT" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="m" fontFile="/font/sf_compact_regular.otf" fontSize="19" zIndex="9" />
+                    <hg_image id="hg_image_stretch_progress1_bg" x="216" y="70" width="250" height="6" src="assets/reminder/progress_bottom.png" zIndex="10" />
+                    <hg_image id="hg_image_stretch_progress2_bg" x="216" y="143" width="250" height="6" src="assets/reminder/progress_bottom.png" zIndex="11" />
+                    <hg_image id="hg_image_stretch_progress1_fg" x="216" y="70" width="28" height="6" src="assets/reminder/progress_top.png" zIndex="12" />
+                    <hg_image id="hg_image_stretch_progress2_fg" x="216" y="143" width="28" height="6" src="assets/reminder/progress_top.png" zIndex="13" />
+                    <hg_image id="hg_image_stretch_slider1" x="231" y="64" width="18" height="18" src="assets/reminder/Slider.png" zIndex="14" />
+                    <hg_image id="hg_image_stretch_slider2" x="231" y="137" width="18" height="18" src="assets/reminder/Slider.png" zIndex="15" />
+                    <hg_image id="hg_image_stretch_time_hour_bg" x="253" y="182" width="50" height="50" src="assets/reminder/time_bg.png" zIndex="16" />
+                    <hg_label id="hg_label_stretch_time_hour" x="253" y="195" width="50" height="24" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="00" fontFile="/font/sf_compact_regular.otf" fontSize="28" zIndex="17" />
+                    <hg_image id="hg_image_stretch_time_min_bg" x="348" y="182" width="50" height="50" src="assets/reminder/time_bg.png" zIndex="18" />
+                    <hg_label id="hg_label_stretch_time_min" x="348" y="195" width="50" height="24" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="10" fontFile="/font/sf_compact_regular.otf" fontSize="28" zIndex="19" />
+                    <hg_image id="hg_image_stretch_start_bg" x="216" y="257" width="250" height="34" src="assets/reminder/start_bg.png" zIndex="20" />
+                    <hg_label id="hg_label_stretch_start" x="216" y="257" width="230" height="34" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="start" fontFile="/font/sf_compact_regular.otf" fontSize="26" zIndex="21" />
+                    <hg_image id="hg_image_stretch_arrow" x="358" y="258" width="40" height="40" transform="{&quot;scaleX&quot;:0.8,&quot;scaleY&quot;:0.8}" src="assets/smart_home/chevron_right.png" zIndex="22" />
+                </hg_list_item>
+            </hg_list>
+        </hg_view>
+    </view>
+</hml>
