@@ -7,5 +7,7 @@
 
 // Event callback function declarations
 void app_monitorMainView_key_0_cb(void *obj, gui_event_t *e);
+void lbl_monitor_time_time_update_cb(void *p);
+void lbl_cam_timestamp_time_update_cb(void *p);
 
 #endif // APP_MONITOR_CALLBACKS_H

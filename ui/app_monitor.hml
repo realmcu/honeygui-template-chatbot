@@ -14,7 +14,54 @@
                     <action type="switchView" target="ChatBotFeaturesView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
                 </event>
             </events>
-            <hg_label id="lbl_3" x="140" y="140" width="200" height="40" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Developing" fontFile="/font/Inter24pt-Medium.ttf" fontSize="24" zIndex="1" />
+            <hg_window id="win_monitor_topbar" x="0" y="0" width="480" height="44" showBackground="true" backgroundColor="#000000" zIndex="5">
+                <hg_circle id="circle_rec_dot" x="11" y="14" width="14" height="14" radius="7" fillColor="#FF3B3B" opacity="255" zIndex="6" />
+                <hg_label id="lbl_rec_status" x="30" y="12" width="50" height="20" hAlign="LEFT" vAlign="MID" color="#FF3B3B" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="REC" fontFile="/font/Inter24pt-Medium.ttf" fontSize="16" zIndex="6" />
+                <hg_label id="lbl_cam_name" x="90" y="12" width="80" height="20" hAlign="CENTER" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="CAM 1" fontFile="/font/Inter24pt-Medium.ttf" fontSize="16" zIndex="6" />
+                <hg_rect id="rect_live_badge" x="200" y="10" width="46" height="22" borderRadius="11" fillColor="#FF3B3B" opacity="200" zIndex="6" />
+                <hg_label id="lbl_live" x="200" y="11" width="46" height="22" hAlign="CENTER" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="LIVE" fontFile="/font/Inter24pt_SemiBold.ttf" fontSize="13" fontType="vector" zIndex="7" />
+                <hg_time_label id="lbl_monitor_time" x="380" y="8" width="100" height="28" hAlign="CENTER" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" characterSets="[{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;0123456789:- &quot;}]" fontFile="/font/Inter24pt-Medium.ttf" fontSize="20" timeFormat="HH:mm" zIndex="6" />
+            </hg_window>
+            <hg_rect id="rect_cam_feed_bg" x="0" y="44" width="360" height="232" borderRadius="0" fillColor="#000000" opacity="255" zIndex="1" />
+            <hg_rect id="rect_corner_tl_h" x="8" y="52" width="24" height="3" borderRadius="0" fillColor="#34E0A1" opacity="255" zIndex="3" />
+            <hg_rect id="rect_corner_tl_v" x="8" y="52" width="3" height="24" borderRadius="0" fillColor="#34E0A1" opacity="255" zIndex="3" />
+            <hg_rect id="rect_corner_tr_h" x="328" y="52" width="24" height="3" borderRadius="0" fillColor="#34E0A1" opacity="255" zIndex="3" />
+            <hg_rect id="rect_corner_tr_v" x="349" y="52" width="3" height="24" borderRadius="0" fillColor="#34E0A1" opacity="255" zIndex="3" />
+            <hg_rect id="rect_corner_bl_h" x="8" y="270" width="24" height="3" borderRadius="0" fillColor="#34E0A1" opacity="255" zIndex="3" />
+            <hg_rect id="rect_corner_bl_v" x="8" y="249" width="3" height="24" borderRadius="0" fillColor="#34E0A1" opacity="255" zIndex="3" />
+            <hg_rect id="rect_corner_br_h" x="328" y="270" width="24" height="3" borderRadius="0" fillColor="#34E0A1" opacity="255" zIndex="3" />
+            <hg_rect id="rect_corner_br_v" x="349" y="249" width="3" height="24" borderRadius="0" fillColor="#34E0A1" opacity="255" zIndex="3" />
+            <hg_label id="lbl_cam_placeholder" x="100" y="148" width="160" height="24" hAlign="CENTER" vAlign="MID" color="#3e755f" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="CAMERA FEED" fontFile="/font/sf_compact_regular.otf" fontSize="16" zIndex="2" />
+            <hg_time_label id="lbl_cam_timestamp" x="12" y="254" width="200" height="18" hAlign="LEFT" vAlign="MID" color="#34E0A1" letterSpacing="0" lineSpacing="0" wordWrap="false" characterSets="[{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;0123456789:- &quot;}]" fontFile="/font/Inter_24pt_Light.ttf" fontSize="13" timeFormat="YYYY-MM-DD HH:mm:ss" zIndex="4" />
+            <hg_window id="win_cam_panel" x="360" y="44" width="120" height="232" showBackground="true" backgroundColor="#000000" zIndex="5">
+                <hg_rect id="rect_cam1_active" x="8" y="8" width="104" height="60" borderRadius="6" fillColor="#1A3A2A" opacity="255" zIndex="6" />
+                <hg_rect id="rect_cam1_accent" x="8" y="8" width="4" height="60" borderRadius="2" fillColor="#34E0A1" opacity="255" zIndex="7" />
+                <hg_label id="lbl_cam1_title" x="18" y="14" width="90" height="18" hAlign="LEFT" vAlign="MID" color="#34E0A1" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="CAM 1" fontFile="/font/Inter24pt-Medium.ttf" fontSize="14" zIndex="7" />
+                <hg_label id="lbl_cam1_desc" x="18" y="34" width="90" height="16" hAlign="LEFT" vAlign="MID" color="#AAAAAA" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Front" fontFile="/font/Inter_24pt_Light.ttf" fontSize="13" zIndex="7" />
+                <hg_circle id="dot_cam1_online" x="100" y="20" width="100" height="40" radius="5" fillColor="#34E0A1" opacity="255" zIndex="8" />
+                <hg_rect id="rect_cam2_bg" x="8" y="78" width="104" height="60" borderRadius="6" fillColor="#1A1A2E" opacity="255" zIndex="6" />
+                <hg_label id="lbl_cam2_title" x="18" y="84" width="90" height="18" hAlign="LEFT" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="CAM 2" fontFile="/font/Inter24pt-Medium.ttf" fontSize="14" zIndex="7" />
+                <hg_label id="lbl_cam2_desc" x="18" y="104" width="90" height="16" hAlign="LEFT" vAlign="MID" color="#AAAAAA" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Rear" fontFile="/font/Inter_24pt_Light.ttf" fontSize="13" zIndex="7" />
+                <hg_circle id="dot_cam2_online" x="100" y="90" width="100" height="40" radius="5" fillColor="#34E0A1" opacity="255" zIndex="8" />
+                <hg_rect id="rect_cam3_bg" x="8" y="148" width="104" height="60" borderRadius="6" fillColor="#1A1A2E" opacity="255" zIndex="6" />
+                <hg_label id="lbl_cam3_title" x="18" y="154" width="90" height="18" hAlign="LEFT" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="CAM 3" fontFile="/font/Inter24pt-Medium.ttf" fontSize="14" zIndex="7" />
+                <hg_label id="lbl_cam3_desc" x="18" y="174" width="90" height="16" hAlign="LEFT" vAlign="MID" color="#AAAAAA" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Wide" fontFile="/font/Inter_24pt_Light.ttf" fontSize="13" zIndex="7" />
+                <hg_circle id="dot_cam3_offline" x="100" y="160" width="100" height="40" radius="5" fillColor="#555555" opacity="255" zIndex="8" />
+            </hg_window>
+            <hg_window id="win_monitor_ctrlbar" x="0" y="276" width="480" height="44" showBackground="true" backgroundColor="#000000" zIndex="5">
+                <hg_rect id="rect_btn_rec" x="10" y="7" width="70" height="30" borderRadius="15" fillColor="#FF3B3B" opacity="220" zIndex="6" />
+                <hg_label id="lbl_btn_rec" x="10" y="7" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="REC" fontFile="/font/Inter24pt-Medium.ttf" fontSize="14" zIndex="7" />
+                <hg_rect id="rect_btn_snap" x="90" y="7" width="70" height="30" borderRadius="15" fillColor="#2A2A3E" opacity="255" zIndex="6" />
+                <hg_label id="lbl_btn_snap" x="90" y="7" width="70" height="30" hAlign="CENTER" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="SNAP" fontFile="/font/Inter24pt-Medium.ttf" fontSize="14" zIndex="7" />
+                <hg_rect id="rect_btn_left" x="178" y="7" width="34" height="30" borderRadius="6" fillColor="#2A2A3E" opacity="255" zIndex="6" />
+                <hg_label id="lbl_btn_left" x="178" y="7" width="34" height="30" hAlign="CENTER" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="L" fontFile="/font/Inter24pt-Medium.ttf" fontSize="16" zIndex="7" />
+                <hg_rect id="rect_btn_right" x="218" y="7" width="34" height="30" borderRadius="6" fillColor="#2A2A3E" opacity="255" zIndex="6" />
+                <hg_label id="lbl_btn_right" x="218" y="7" width="34" height="30" hAlign="CENTER" vAlign="MID" color="#FFFFFF" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="R" fontFile="/font/Inter24pt-Medium.ttf" fontSize="16" zIndex="7" />
+                <hg_rect id="rect_btn_events" x="262" y="7" width="90" height="30" borderRadius="15" fillColor="#2A2A3E" opacity="255" zIndex="6" />
+                <hg_label id="lbl_btn_events" x="262" y="7" width="90" height="30" hAlign="CENTER" vAlign="MID" color="#F0F757" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="EVENTS" fontFile="/font/Inter24pt-Medium.ttf" fontSize="13" zIndex="7" />
+                <hg_rect id="rect_btn_power" x="362" y="7" width="108" height="30" borderRadius="15" fillColor="#1A3A2A" opacity="255" zIndex="6" />
+                <hg_label id="lbl_btn_power" x="362" y="7" width="108" height="30" hAlign="CENTER" vAlign="MID" color="#34E0A1" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="ON" fontFile="/font/Inter24pt-Medium.ttf" fontSize="14" zIndex="7" />
+            </hg_window>
         </hg_view>
     </view>
 </hml>

@@ -5,6 +5,9 @@
 #include <string.h>
 #include <time.h>
 
+// Time string global variables (defined in UI file)
+extern char hg_time_label_games_time_str[10];
+
 // Event callback function implementations
 
 void app_gamesMainView_key_0_cb(void *obj, gui_event_t *e)
@@ -20,6 +23,22 @@ void app_gamesMainView_key_0_cb(void *obj, gui_event_t *e)
     {
         gui_view_switch_direct(gui_view_get_current(), "ChatBotFeaturesView", SWITCH_OUT_ANIMATION_FADE, SWITCH_IN_ANIMATION_FADE);
     }
+}
+
+void hg_time_label_games_time_update_cb(void *p)
+{
+    GUI_UNUSED(p);
+    
+    time_t now = time(NULL);
+    struct tm *t = localtime(&now);
+    if (t == NULL)
+    {
+        return;
+    }
+    
+    sprintf(hg_time_label_games_time_str, "%02d:%02d", t->tm_hour, t->tm_min);
+    
+    gui_text_content_set((gui_text_t *)hg_time_label_games, hg_time_label_games_time_str, strlen(hg_time_label_games_time_str));
 }
 
 /* @protected start custom_functions */

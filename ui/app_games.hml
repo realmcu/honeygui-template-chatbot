@@ -14,7 +14,47 @@
                     <action type="switchView" target="ChatBotFeaturesView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
                 </event>
             </events>
-            <hg_label id="lbl_2" x="140" y="140" width="200" height="40" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Developing" fontFile="/font/Inter24pt-Medium.ttf" fontSize="24" zIndex="1" />
+            <hg_list id="hg_list_games" x="0" y="50" width="480" height="270" itemWidth="480" itemHeight="90" space="5" direction="VERTICAL" style="LIST_CLASSIC" noteNum="5" autoAlign="false" inertia="true" loop="false" createBar="false" enableAreaDisplay="false" keepNoteAlive="false" zIndex="0" showOverflow="true">
+                <hg_list_item id="item_tetris" x="0" y="0" width="480" height="90" index="0" zIndex="0">
+                    <hg_image id="img_tetris_bg" x="74" y="0" width="349" height="112" transform="{&quot;scaleX&quot;:1,&quot;scaleY&quot;:0.8}" src="assets/smart_home/list_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFF2d2d2d" zIndex="1" />
+                    <hg_image id="img_tetris_icon" x="99" y="15" width="60" height="60" src="assets/game/tetris.png" zIndex="2" />
+                    <hg_label id="lbl_tetris_name" x="187" y="18" width="160" height="30" hAlign="LEFT" vAlign="MID" color="#ffffff" text="Tetris" fontFile="/font/Inter24pt-Medium.ttf" fontSize="24" zIndex="3" />
+                    <hg_label id="lbl_tetris_tag" x="187" y="50" width="160" height="26" hAlign="LEFT" vAlign="MID" color="#34E0A1" text="Puzzle · Classic" fontFile="/font/sf_compact_regular.otf" fontSize="20" zIndex="3" />
+                    <hg_image id="img_tetris_chevron" x="383" y="25" width="40" height="40" src="assets/smart_home/chevron_right.png" zIndex="4" />
+                </hg_list_item>
+                <hg_list_item id="item_snake" x="0" y="95" width="480" height="90" index="1" zIndex="1">
+                    <hg_image id="img_snake_bg" x="74" y="0" width="349" height="112" transform="{&quot;scaleX&quot;:1,&quot;scaleY&quot;:0.8}" src="assets/smart_home/list_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFF2d2d2d" zIndex="1" />
+                    <hg_image id="img_snake_icon" x="99" y="15" width="60" height="60" src="assets/game/snake.png" zIndex="2" />
+                    <hg_label id="lbl_snake_name" x="187" y="18" width="160" height="30" hAlign="LEFT" vAlign="MID" color="#ffffff" text="Snake" fontFile="/font/Inter24pt-Medium.ttf" fontSize="24" zIndex="3" />
+                    <hg_label id="lbl_snake_tag" x="187" y="50" width="160" height="26" hAlign="LEFT" vAlign="MID" color="#34E0A1" text="Arcade · Classic" fontFile="/font/sf_compact_regular.otf" fontSize="20" zIndex="3" />
+                    <hg_image id="img_snake_chevron" x="383" y="25" width="40" height="40" src="assets/smart_home/chevron_right.png" zIndex="4" />
+                </hg_list_item>
+                <hg_list_item id="item_2048" x="0" y="190" width="480" height="90" index="2" zIndex="2">
+                    <hg_image id="img_2048_bg" x="74" y="0" width="349" height="112" transform="{&quot;scaleX&quot;:1,&quot;scaleY&quot;:0.8}" src="assets/smart_home/list_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFF2d2d2d" zIndex="1" />
+                    <hg_image id="img_2048_icon" x="99" y="15" width="60" height="60" src="assets/game/2048.png" zIndex="2" />
+                    <hg_label id="lbl_2048_name" x="187" y="18" width="160" height="30" hAlign="LEFT" vAlign="MID" color="#ffffff" text="2048" fontFile="/font/Inter24pt-Medium.ttf" fontSize="24" zIndex="3" />
+                    <hg_label id="lbl_2048_tag" x="187" y="50" width="160" height="26" hAlign="LEFT" vAlign="MID" color="#34E0A1" text="Strategy · Numbers" fontFile="/font/sf_compact_regular.otf" fontSize="20" zIndex="3" />
+                    <hg_image id="img_2048_chevron" x="383" y="25" width="40" height="40" src="assets/smart_home/chevron_right.png" zIndex="4" />
+                </hg_list_item>
+                <hg_list_item id="item_breakout" x="0" y="285" width="480" height="90" index="3" zIndex="3">
+                    <hg_image id="img_breakout_bg" x="74" y="0" width="349" height="112" transform="{&quot;scaleX&quot;:1,&quot;scaleY&quot;:0.8}" src="assets/smart_home/list_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFF2d2d2d" zIndex="1" />
+                    <hg_image id="img_breakout_icon" x="99" y="15" width="60" height="60" src="assets/game/breakout.png" zIndex="2" />
+                    <hg_label id="lbl_breakout_name" x="187" y="18" width="160" height="30" hAlign="LEFT" vAlign="MID" color="#ffffff" text="Breakout" fontFile="/font/Inter24pt-Medium.ttf" fontSize="24" zIndex="3" />
+                    <hg_label id="lbl_breakout_tag" x="187" y="50" width="160" height="26" hAlign="LEFT" vAlign="MID" color="#34E0A1" text="Action · Retro" fontFile="/font/sf_compact_regular.otf" fontSize="20" zIndex="3" />
+                    <hg_image id="img_breakout_chevron" x="383" y="25" width="40" height="40" src="assets/smart_home/chevron_right.png" zIndex="4" />
+                </hg_list_item>
+                <hg_list_item id="item_pacman" x="0" y="380" width="480" height="90" index="4" zIndex="4">
+                    <hg_image id="img_pacman_bg" x="74" y="0" width="349" height="112" transform="{&quot;scaleX&quot;:1,&quot;scaleY&quot;:0.8}" src="assets/smart_home/list_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFF2d2d2d" zIndex="1" />
+                    <hg_image id="img_pacman_icon" x="99" y="15" width="60" height="60" src="assets/game/pacman.png" zIndex="2" />
+                    <hg_label id="lbl_pacman_name" x="187" y="18" width="160" height="30" hAlign="LEFT" vAlign="MID" color="#ffffff" text="Pac-Man" fontFile="/font/Inter24pt-Medium.ttf" fontSize="24" zIndex="3" />
+                    <hg_label id="lbl_pacman_tag" x="187" y="50" width="160" height="26" hAlign="LEFT" vAlign="MID" color="#34E0A1" text="Arcade · Maze" fontFile="/font/sf_compact_regular.otf" fontSize="20" zIndex="3" />
+                    <hg_image id="img_pacman_chevron" x="383" y="25" width="40" height="40" src="assets/smart_home/chevron_right.png" zIndex="4" />
+                </hg_list_item>
+            </hg_list>
+            <hg_window id="hg_window_games_topbar" x="0" y="0" width="480" height="43" showBackground="false" backgroundColor="#808080" enableBlur="true" blurDegree="225" zIndex="1">
+                <hg_label id="lbl_games_title" x="140" y="8" width="200" height="35" hAlign="CENTER" vAlign="MID" color="#ffffff" text="Games" fontFile="/font/Inter24pt-Medium.ttf" fontSize="26" zIndex="1" />
+                <hg_time_label id="hg_time_label_games" x="380" y="8" width="100" height="35" hAlign="CENTER" vAlign="MID" color="#ffffff" fontFile="/font/Inter24pt-Medium.ttf" fontSize="24" timeFormat="HH:mm" zIndex="0" />
+            </hg_window>
         </hg_view>
     </view>
 </hml>

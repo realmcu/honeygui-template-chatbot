@@ -43,7 +43,7 @@ static int blink_frame = 0;
 static int blink_cooldown = 0;  // 眨眼冷却计数器
 #define BLINK_CLOSE_FRAMES 6   // 闭眼动画帧数
 #define BLINK_OPEN_FRAMES 6    // 睁眼动画帧数
-#define BLINK_COOLDOWN_FRAMES 120  // 冷却时间（约2秒，60fps）
+#define BLINK_COOLDOWN_FRAMES 90  // 冷却时间
 
 // 开心表情动画状态
 static int happy_step = 0;
