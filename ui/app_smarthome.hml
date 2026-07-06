@@ -14,7 +14,7 @@
                     <action type="switchView" target="ChatBotFeaturesView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
                 </event>
             </events>
-            <hg_list id="hg_list_smarthome_menu" x="0" y="50" width="480" height="320" itemWidth="480" itemHeight="112" space="10" direction="VERTICAL" style="LIST_CLASSIC" cardStackLocation="0" noteNum="3" offset="0" outScope="0" autoAlign="true" inertia="true" loop="false" createBar="false" enableAreaDisplay="false" keepNoteAlive="false" showOverflow="true" zIndex="0" showOverflow="true">
+            <hg_list id="hg_list_smarthome_menu" x="0" y="50" width="480" height="320" itemWidth="480" itemHeight="112" space="10" direction="VERTICAL" style="LIST_CLASSIC" cardStackLocation="0" noteNum="3" offset="0" outScope="0" autoAlign="true" inertia="true" loop="false" createBar="false" enableAreaDisplay="false" keepNoteAlive="false" zIndex="0" showOverflow="true">
                 <hg_list_item id="hg_list_smarthome_menu_item_0" x="0" y="0" width="480" height="112" index="0" zIndex="0">
                     <hg_image id="hg_image_smarthome_active_bg" x="74" y="0" width="349" height="112" src="assets/smart_home/list_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFF2d2d2d" zIndex="1">
                         <events>
@@ -24,7 +24,7 @@
                         </events>
                     </hg_image>
                     <hg_image id="hg_image_smarthome_active_icon" x="99" y="26" width="60" height="60" src="assets/smart_home/lightbulb.png" zIndex="2" />
-                    <hg_label id="hg_label_smarthome_active_title" x="187" y="26" width="150" height="30" hAlign="LEFT" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Active Devices" fontFile="/font/Inter24pt-Medium.ttf" fontSize="24" zIndex="3" />
+                    <hg_label id="hg_label_smarthome_active_title" x="187" y="26" width="193" height="30" hAlign="LEFT" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Active Devices" fontFile="/font/Inter24pt-Medium.ttf" fontSize="24" zIndex="3" />
                     <hg_label id="hg_label_smarthome_active_count" x="187" y="56" width="150" height="30" hAlign="LEFT" vAlign="MID" color="#34E0A1" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="3 devices" fontFile="/font/sf_compact_regular.otf" fontSize="24" zIndex="3" />
                     <hg_image id="hg_image_smarthome_active_chevron" x="383" y="36" width="40" height="40" src="assets/smart_home/chevron_right.png" zIndex="4" />
                 </hg_list_item>
@@ -55,12 +55,12 @@
         </hg_view>
         <hg_view id="view_active_device" x="625" y="-227" width="480" height="320" backgroundColor="#000000" borderRadius="20" padding="12" overflow="auto" entry="false" zIndex="1">
             <hg_time_label id="hg_time_label_active_time" x="380" y="8" width="100" height="35" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" characterSets="[{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;0123456789:- &quot;}]" fontFile="/font/Inter24pt-Medium.ttf" fontSize="24" timeFormat="HH:mm" zIndex="0" />
-            <hg_label id="hg_label_active_title" x="140" y="49" width="200" height="40" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Active Devices" fontFile="/font/Inter24pt-Medium.ttf" fontSize="30" zIndex="3" />
+            <hg_label id="hg_label_active_title" x="133" y="49" width="215" height="40" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Active Devices" fontFile="/font/Inter24pt-Medium.ttf" fontSize="30" zIndex="3" />
             <hg_label id="hg_label_active_count" x="165" y="89" width="150" height="30" hAlign="CENTER" vAlign="MID" color="#34E0A1" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="3 devices" fontFile="/font/sf_compact_regular.otf" fontSize="24" zIndex="3" />
             <hg_image id="hg_image_active_airconditioner_icon" x="80" y="141" width="60" height="60" src="assets/smart_home/air_round.png" zIndex="5" />
             <hg_image id="hg_image_active_light_icon" x="210" y="141" width="60" height="60" src="assets/smart_home/lightbulb.png" zIndex="6" />
             <hg_image id="hg_image_active_fan_icon" x="340" y="141" width="60" height="60" src="assets/smart_home/wind_power.png" zIndex="7" />
-            <hg_label id="hg_label_active_airconditioner_name" x="50" y="204" width="120" height="30" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Air Conditioner" fontFile="/font/sf_compact_regular.otf" fontSize="20" zIndex="3" />
+            <hg_label id="hg_label_active_airconditioner_name" x="38" y="204" width="144" height="30" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Air Conditioner" fontFile="/font/sf_compact_regular.otf" fontSize="20" zIndex="3" />
             <hg_label id="hg_label_active_light_name" x="180" y="204" width="120" height="30" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Light 1" fontFile="/font/sf_compact_regular.otf" fontSize="20" zIndex="3" />
             <hg_label id="hg_label_active_fan_name" x="310" y="204" width="120" height="30" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Fan" fontFile="/font/sf_compact_regular.otf" fontSize="20" zIndex="3" />
             <hg_label id="hg_label_active_airconditioner_room" x="50" y="234" width="120" height="30" hAlign="CENTER" vAlign="MID" color="#b0b0b0" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Living Room" fontFile="/font/sf_compact_regular.otf" fontSize="18" zIndex="3" />
@@ -96,7 +96,7 @@
         </hg_view>
         <hg_view id="view_air_conditioner" x="1793" y="500" width="480" height="320" backgroundColor="#000000" borderRadius="20" padding="12" overflow="auto" entry="false" zIndex="1">
             <hg_time_label id="hg_time_label_ac_time" x="380" y="8" width="100" height="35" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" characterSets="[{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;0123456789:- &quot;}]" fontFile="/font/Inter24pt-Medium.ttf" fontSize="24" timeFormat="HH:mm" zIndex="0" />
-            <hg_label id="hg_label_ac_title" x="140" y="49" width="200" height="40" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Air Conditioner" fontFile="/font/Inter24pt-Medium.ttf" fontSize="30" zIndex="3" />
+            <hg_label id="hg_label_ac_title" x="130" y="49" width="221" height="40" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Air Conditioner" fontFile="/font/Inter24pt-Medium.ttf" fontSize="30" zIndex="3" />
             <hg_window id="hg_window_ac_back" x="0" y="0" width="100" height="50" showBackground="false" backgroundColor="#808080" enableBlur="false" blurDegree="225" zIndex="1">
                 <events>
                     <event type="onClick">
@@ -113,7 +113,7 @@
             <hg_label id="hg_label_ac_status" x="215" y="240" width="50" height="40" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="off" fontFile="/font/Inter24pt-Medium.ttf" fontSize="30" zIndex="3" />
         </hg_view>
         <hg_view id="view_room_list" x="625" y="148" width="480" height="320" backgroundColor="#000000" borderRadius="20" padding="12" overflow="auto" entry="false" zIndex="2">
-            <hg_list id="hg_list_room" x="0" y="94" width="480" height="320" itemWidth="480" itemHeight="90" space="5" direction="VERTICAL" style="LIST_CLASSIC" cardStackLocation="0" noteNum="3" offset="0" outScope="0" autoAlign="true" inertia="true" loop="false" createBar="false" enableAreaDisplay="false" keepNoteAlive="false" showOverflow="true" zIndex="0" showOverflow="true">
+            <hg_list id="hg_list_room" x="0" y="94" width="480" height="320" itemWidth="480" itemHeight="90" space="5" direction="VERTICAL" style="LIST_CLASSIC" cardStackLocation="0" noteNum="3" offset="0" outScope="0" autoAlign="true" inertia="true" loop="false" createBar="false" enableAreaDisplay="false" keepNoteAlive="false" zIndex="0" showOverflow="true">
                 <hg_list_item id="hg_list_room_item_0" x="0" y="0" width="480" height="90" index="0" zIndex="0">
                     <hg_image id="hg_image_room_living_bg" x="74" y="0" width="349" height="112" transform="{&quot;scaleY&quot;:0.8}" src="assets/smart_home/list_bg.png" blendMode="IMG_2D_SW_FIX_A8_FG" fgColor="0xFF2d2d2d" zIndex="1">
                         <events>
@@ -122,7 +122,7 @@
                             </event>
                         </events>
                     </hg_image>
-                    <hg_label id="hg_label_room_living_name" x="95" y="14" width="150" height="30" hAlign="LEFT" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Living Room" fontFile="/font/Inter24pt-Medium.ttf" fontSize="28" zIndex="3" />
+                    <hg_label id="hg_label_room_living_name" x="95" y="14" width="173" height="30" hAlign="LEFT" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Living Room" fontFile="/font/Inter24pt-Medium.ttf" fontSize="28" zIndex="3" />
                     <hg_label id="hg_label_room_living_count" x="95" y="45" width="150" height="30" hAlign="LEFT" vAlign="MID" color="#34E0A1" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="9 devices" fontFile="/font/sf_compact_regular.otf" fontSize="26" zIndex="3" />
                     <hg_image id="hg_image_room_living_chevron" x="383" y="25" width="40" height="40" src="assets/smart_home/chevron_right.png" zIndex="4" />
                 </hg_list_item>
@@ -154,7 +154,7 @@
             </hg_window>
         </hg_view>
         <hg_view id="view_living_room" x="1213" y="148" width="480" height="320" backgroundColor="#000000" borderRadius="20" padding="12" overflow="auto" entry="false" zIndex="3">
-            <hg_list id="hg_list_living_devices" x="0" y="122" width="480" height="320" itemWidth="480" itemHeight="110" space="5" direction="VERTICAL" style="LIST_CLASSIC" cardStackLocation="0" noteNum="3" offset="0" outScope="0" autoAlign="true" inertia="true" loop="false" createBar="false" enableAreaDisplay="false" keepNoteAlive="false" showOverflow="true" zIndex="0" showOverflow="true">
+            <hg_list id="hg_list_living_devices" x="0" y="122" width="480" height="320" itemWidth="480" itemHeight="110" space="5" direction="VERTICAL" style="LIST_CLASSIC" cardStackLocation="0" noteNum="3" offset="0" outScope="0" autoAlign="true" inertia="true" loop="false" createBar="false" enableAreaDisplay="false" keepNoteAlive="false" zIndex="0" showOverflow="true">
                 <hg_list_item id="hg_list_living_devices_item_0" x="0" y="0" width="480" height="110" index="0" zIndex="0">
                     <hg_image id="hg_image_living_ac_icon" x="210" y="14" width="60" height="60" src="assets/smart_home/air_round.png" zIndex="3">
                         <events>
@@ -163,7 +163,7 @@
                             </event>
                         </events>
                     </hg_image>
-                    <hg_label id="hg_label_living_ac_name" x="180" y="77" width="120" height="30" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Air Conditioner" fontFile="/font/sf_compact_regular.otf" fontSize="20" zIndex="6" />
+                    <hg_label id="hg_label_living_ac_name" x="164" y="77" width="153" height="30" hAlign="CENTER" vAlign="MID" color="#ffffff" letterSpacing="0" lineSpacing="0" wordWrap="false" wordBreak="false" text="Air Conditioner" fontFile="/font/sf_compact_regular.otf" fontSize="20" zIndex="6" />
                     <hg_image id="hg_image_living_tv_icon" x="80" y="14" width="60" height="60" src="assets/smart_home/smart_tv.png" zIndex="7">
                         <events>
                             <event type="onClick">

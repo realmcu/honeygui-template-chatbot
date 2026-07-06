@@ -7,7 +7,7 @@
 
 // Time string global variables (defined in UI file)
 extern char lbl_monitor_time_time_str[10];
-extern char lbl_cam_timestamp_time_str[22];
+extern char lbl_cam_timestamp_time_str[32];
 
 // Event callback function implementations
 
@@ -37,7 +37,7 @@ void lbl_monitor_time_time_update_cb(void *p)
         return;
     }
     
-    sprintf(lbl_monitor_time_time_str, "%02d:%02d", t->tm_hour, t->tm_min);
+    snprintf(lbl_monitor_time_time_str, sizeof(lbl_monitor_time_time_str), "%02d:%02d", t->tm_hour, t->tm_min);
     
     gui_text_content_set((gui_text_t *)lbl_monitor_time, lbl_monitor_time_time_str, strlen(lbl_monitor_time_time_str));
 }
@@ -53,7 +53,7 @@ void lbl_cam_timestamp_time_update_cb(void *p)
         return;
     }
     
-    sprintf(lbl_cam_timestamp_time_str, "%04d-%02d-%02d %02d:%02d:%02d", t->tm_year + 1900, t->tm_mon + 1, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec);
+    snprintf(lbl_cam_timestamp_time_str, sizeof(lbl_cam_timestamp_time_str), "%04d-%02d-%02d %02d:%02d:%02d", (t->tm_year + 1900) % 10000, t->tm_mon + 1, t->tm_mday, t->tm_hour, t->tm_min, t->tm_sec);
     
     gui_text_content_set((gui_text_t *)lbl_cam_timestamp, lbl_cam_timestamp_time_str, strlen(lbl_cam_timestamp_time_str));
 }

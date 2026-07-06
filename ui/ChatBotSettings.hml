@@ -6,7 +6,7 @@
     </meta>
     <view>
         <hg_view id="ChatBotSettingsView" x="0" y="0" width="480" height="320" backgroundColor="#000000" entry="false" zIndex="0">
-            <hg_list id="settingsList" x="0" y="50" width="480" height="270" itemWidth="480" itemHeight="60" space="5" direction="VERTICAL" style="LIST_CLASSIC" cardStackLocation="0" noteNum="11" offset="0" outScope="0" autoAlign="false" inertia="true" loop="false" createBar="false" showOverflow="true" enableAreaDisplay="false" keepNoteAlive="false" zIndex="0" showOverflow="true">
+            <hg_list id="settingsList" x="0" y="50" width="480" height="270" itemWidth="480" itemHeight="60" space="5" direction="VERTICAL" style="LIST_CLASSIC" cardStackLocation="0" noteNum="11" offset="0" outScope="0" autoAlign="false" inertia="true" loop="false" createBar="false" enableAreaDisplay="false" keepNoteAlive="false" zIndex="0" showOverflow="true">
                 <hg_list_item id="settingsList_item_0" x="0" y="0" width="480" height="60" index="0" locked="true" zIndex="0">
                     <hg_rect id="languageItemBg" x="20" y="5" width="440" height="50" fillColor="#1A1A2E" borderRadius="12" opacity="200" zIndex="0">
                         <events>

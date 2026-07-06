@@ -11,38 +11,38 @@
                     <action type="switchView" target="ChatBotTemplateMainView" switchOutStyle="SWITCH_OUT_ANIMATION_FADE" switchInStyle="SWITCH_IN_ANIMATION_FADE" />
                 </event>
             </events>
-            <hg_list id="hg_list_chat_messages" x="0" y="45" width="480" height="320" itemWidth="480" itemHeight="50" space="0" direction="VERTICAL" style="LIST_CLASSIC" cardStackLocation="0" noteNum="11" offset="-350" outScope="0" autoAlign="false" inertia="true" loop="false" createBar="true" enableAreaDisplay="false" showOverflow="true" keepNoteAlive="false" zIndex="0" showOverflow="true">
+            <hg_list id="hg_list_chat_messages" x="0" y="45" width="480" height="320" itemWidth="480" itemHeight="50" space="0" direction="VERTICAL" style="LIST_CLASSIC" cardStackLocation="0" noteNum="11" offset="-350" outScope="0" autoAlign="false" inertia="true" loop="false" createBar="true" enableAreaDisplay="false" keepNoteAlive="false" zIndex="0" showOverflow="true">
                 <hg_list_item id="hg_list_chat_messages_item_0" x="0" y="0" width="480" height="50" index="0" locked="true" zIndex="0">
                     <hg_rect id="hg_rect_bot_bubble_1" x="6" y="5" width="230" height="40" fillColor="#E8EEF5" borderRadius="12" zIndex="0" />
-                    <hg_label id="hg_label_bot_text_1" x="6" y="5" width="230" height="40" color="#2C3E50" wordWrap="true" vAlign="MID" hAlign="CENTER" text="Hello! How can I help you today?" fontSize="17" fontFile="/font/Inter_24pt_Light.ttf" fontType="bitmap" zIndex="1" />
+                    <hg_label id="hg_label_bot_text_1" x="6" y="5" width="230" height="40" color="#2C3E50" wordWrap="true" vAlign="MID" hAlign="CENTER" text="Hello! How can I help you today?" fontSize="15" fontFile="/font/Inter_24pt_Light.ttf" fontType="bitmap" zIndex="1" />
                 </hg_list_item>
                 <hg_list_item id="hg_list_chat_messages_item_1" x="0" y="50" width="480" height="50" index="1" locked="true" zIndex="1">
                     <hg_rect id="hg_rect_user_bubble_1" x="299" y="5" width="175" height="40" fillColor="#4A90E2" borderRadius="12" zIndex="5" />
-                    <hg_label id="hg_label_user_text_1" x="299" y="5" width="175" height="40" color="#FFFFFF" wordWrap="true" vAlign="MID" hAlign="CENTER" text="What&#39;s the weather like?" fontSize="17" fontFile="/font/Inter_24pt_Light.ttf" fontType="bitmap" zIndex="6" />
+                    <hg_label id="hg_label_user_text_1" x="299" y="5" width="175" height="40" color="#FFFFFF" wordWrap="true" vAlign="MID" hAlign="CENTER" text="What&#39;s the weather like?" fontSize="15" fontFile="/font/Inter_24pt_Light.ttf" fontType="bitmap" zIndex="6" />
                 </hg_list_item>
                 <hg_list_item id="hg_list_chat_messages_item_2" x="0" y="100" width="480" height="50" index="2" locked="true" zIndex="2">
                     <hg_rect id="hg_rect_bot_bubble_2" x="6" y="5" width="150" height="40" fillColor="#E8EEF5" borderRadius="12" zIndex="0" />
-                    <hg_label id="hg_label_bot_text_2" x="6" y="5" width="150" height="40" color="#2C3E50" wordWrap="true" vAlign="MID" hAlign="CENTER" text="It&#39;s sunny and 22°C." fontSize="17" fontFile="/font/Inter_24pt_Light.ttf" fontType="bitmap" zIndex="1" />
+                    <hg_label id="hg_label_bot_text_2" x="6" y="5" width="150" height="40" color="#2C3E50" wordWrap="true" vAlign="MID" hAlign="CENTER" text="It&#39;s sunny and 22°C." fontSize="15" fontFile="/font/Inter_24pt_Light.ttf" fontType="bitmap" zIndex="1" />
                 </hg_list_item>
                 <hg_list_item id="hg_list_chat_messages_item_3" x="0" y="150" width="480" height="50" index="3" locked="true" zIndex="3">
                     <hg_rect id="hg_rect_user_bubble_2" x="320" y="5" width="154" height="40" fillColor="#4A90E2" borderRadius="12" zIndex="5" />
-                    <hg_label id="hg_label_user_text_2" x="320" y="5" width="154" height="40" color="#FFFFFF" wordWrap="true" vAlign="MID" hAlign="CENTER" text="That&#39;s great! Thanks." fontSize="17" fontFile="/font/Inter_24pt_Light.ttf" fontType="bitmap" zIndex="6" />
+                    <hg_label id="hg_label_user_text_2" x="320" y="5" width="154" height="40" color="#FFFFFF" wordWrap="true" vAlign="MID" hAlign="CENTER" text="That&#39;s great! Thanks." fontSize="15" fontFile="/font/Inter_24pt_Light.ttf" fontType="bitmap" zIndex="6" />
                 </hg_list_item>
                 <hg_list_item id="hg_list_chat_messages_item_4" x="0" y="200" width="480" height="50" index="4" locked="true" zIndex="4">
                     <hg_rect id="hg_rect_bot_bubble_3" x="6" y="5" width="320" height="40" fillColor="#E8EEF5" borderRadius="12" zIndex="0" />
-                    <hg_label id="hg_label_bot_text_3" x="6" y="5" width="320" height="40" color="#2C3E50" wordWrap="true" vAlign="MID" hAlign="CENTER" text="You&#39;re welcome! Anything else I can help with?" fontSize="17" fontFile="/font/Inter_24pt_Light.ttf" fontType="bitmap" zIndex="1" />
+                    <hg_label id="hg_label_bot_text_3" x="6" y="5" width="320" height="40" color="#2C3E50" wordWrap="true" vAlign="MID" hAlign="CENTER" text="You&#39;re welcome! Anything else I can help with?" fontSize="15" fontFile="/font/Inter_24pt_Light.ttf" fontType="bitmap" zIndex="1" />
                 </hg_list_item>
                 <hg_list_item id="hg_list_chat_messages_item_5" x="0" y="250" width="480" height="50" index="5" locked="true" zIndex="5">
                     <hg_rect id="hg_rect_user_bubble_3" x="260" y="5" width="214" height="40" fillColor="#4A90E2" borderRadius="12" zIndex="5" />
-                    <hg_label id="hg_label_user_text_3" x="260" y="5" width="214" height="40" color="#FFFFFF" wordWrap="true" vAlign="MID" hAlign="CENTER" text="Can you set a reminder for me?" fontSize="17" fontFile="/font/Inter_24pt_Light.ttf" fontType="bitmap" zIndex="6" />
+                    <hg_label id="hg_label_user_text_3" x="260" y="5" width="214" height="40" color="#FFFFFF" wordWrap="true" vAlign="MID" hAlign="CENTER" text="Can you set a reminder for me?" fontSize="15" fontFile="/font/Inter_24pt_Light.ttf" fontType="bitmap" zIndex="6" />
                 </hg_list_item>
                 <hg_list_item id="hg_list_chat_messages_item_6" x="0" y="300" width="480" height="50" index="6" locked="true" zIndex="6">
                     <hg_rect id="hg_rect_bot_bubble_4" x="6" y="5" width="310" height="40" fillColor="#E8EEF5" borderRadius="12" zIndex="0" />
-                    <hg_label id="hg_label_bot_text_4" x="6" y="5" width="310" height="40" color="#2C3E50" wordWrap="true" vAlign="MID" hAlign="CENTER" text="Of course! What would you like to remember?" fontSize="17" fontFile="/font/Inter_24pt_Light.ttf" fontType="bitmap" zIndex="1" />
+                    <hg_label id="hg_label_bot_text_4" x="6" y="5" width="310" height="40" color="#2C3E50" wordWrap="true" vAlign="MID" hAlign="CENTER" text="Of course! What would you like to remember?" fontSize="15" fontFile="/font/Inter_24pt_Light.ttf" fontType="bitmap" zIndex="1" />
                 </hg_list_item>
                 <hg_list_item id="hg_list_chat_messages_item_7" x="0" y="350" width="480" height="50" index="7" locked="true" zIndex="7">
                     <hg_rect id="hg_rect_user_bubble_4" x="300" y="5" width="174" height="40" fillColor="#4A90E2" borderRadius="12" zIndex="5" />
-                    <hg_label id="hg_label_user_text_4" x="300" y="5" width="174" height="40" color="#FFFFFF" wordWrap="true" vAlign="MID" hAlign="CENTER" text="Meeting at 3 PM today." fontSize="17" fontFile="/font/Inter_24pt_Light.ttf" fontType="bitmap" zIndex="6" />
+                    <hg_label id="hg_label_user_text_4" x="300" y="5" width="174" height="40" color="#FFFFFF" wordWrap="true" vAlign="MID" hAlign="CENTER" text="Meeting at 3 PM today." fontSize="15" fontFile="/font/Inter_24pt_Light.ttf" fontType="bitmap" zIndex="6" />
                 </hg_list_item>
                 <hg_list_item id="hg_list_chat_messages_item_8" x="0" y="400" width="480" height="50" index="8" locked="true" zIndex="8" />
                 <hg_list_item id="hg_list_chat_messages_item_9" x="0" y="450" width="480" height="50" index="9" locked="true" zIndex="9" />
